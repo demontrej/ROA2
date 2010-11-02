@@ -1,0 +1,14 @@
+<p>
+  <b>Titulo:</b>
+  <%=h @libro.titulo %>
+</p>
+
+<p>
+  <b>Contenido:</b>
+  <%=h @libro.contenido %>
+</p>
+
+<% if can? :update, @Libro %>
+<%= link_to 'Edit', edit_libro_path(@libro) %> |
+<% end %>
+<%= link_to 'Back', libros_path %>
