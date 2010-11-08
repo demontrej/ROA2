@@ -1,0 +1,13 @@
+one:
+  titulo: MyString
+  idioma: MyString
+  descripcion: MyText
+  palabras_clave: MyString
+  ambito: MyString
+
+two:
+  titulo: MyString
+  idioma: MyString
+  descripcion: MyText
+  palabras_clave: MyString
+  ambito: MyString

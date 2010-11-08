@@ -9,11 +9,31 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101031205802) do
+ActiveRecord::Schema.define(:version => 20101108005110) do
 
   create_table "libros", :force => true do |t|
     t.string   "titulo"
     t.text     "contenido"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "oas", :force => true do |t|
+    t.string   "titulo"
+    t.string   "idioma"
+    t.text     "descripcion"
+    t.string   "palabras_clave"
+    t.string   "ambito"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "media_file_name"
+    t.string   "media_content_type"
+    t.integer  "media_file_size"
+    t.datetime "media_updated_at"
+  end
+
+  create_table "tecnicas", :force => true do |t|
+    t.integer  "oa_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

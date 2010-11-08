@@ -1,0 +1,29 @@
+<% form_for @oa, :html => { :multipart => true } do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :titulo %><br />
+    <%= f.text_field :titulo %>
+  </p>
+  <p>
+    <%= f.label :idioma %><br />
+    <%= f.text_field :idioma %>
+  </p>
+  <p>
+    <%= f.label :descripcion %><br />
+    <%= f.text_area :descripcion %>
+  </p>
+  <p>
+    <%= f.label :palabras_clave %><br />
+    <%= f.text_field :palabras_clave %>
+  </p>
+  <p>
+    <%= f.label :ambito %><br />
+    <%= f.text_field :ambito %>
+  </p>
+ <p>
+    <%= f.label :media, "Recurso" %>
+    <%= f.file_field :media %>
+
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

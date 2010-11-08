@@ -1,0 +1,2 @@
+module TecnicasHelper
+end

@@ -1,0 +1,33 @@
+<% title "Oa" %>
+
+<p>
+  <strong>Titulo:</strong>
+  <%=h @oa.titulo %>
+</p>
+<p>
+  <strong>Idioma:</strong>
+  <%=h @oa.idioma %>
+</p>
+<p>
+  <strong>Descripcion:</strong>
+  <%=h @oa.descripcion %>
+</p>
+<p>
+  <strong>Palabras Clave:</strong>
+  <%=h @oa.palabras_clave %>
+</p>
+<p>
+  <strong>Ambito:</strong>
+  <%=h @oa.ambito %>
+</p>
+
+<p>
+  <strong>file:</strong>
+  <%= image_tag @oa.media.url %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_oa_path(@oa) %> |
+  <%= link_to "Destroy", @oa, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", oas_path %>
+</p>

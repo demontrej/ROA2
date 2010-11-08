@@ -1,0 +1,12 @@
+<% title "Tecnica" %>
+
+<p>
+  <strong>Oa:</strong>
+  <%=h @tecnica.oa_id %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_tecnica_path(@tecnica) %> |
+  <%= link_to "Destroy", @tecnica, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", tecnicas_path %>
+</p>

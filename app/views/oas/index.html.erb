@@ -1,0 +1,27 @@
+<% title "Oas" %>
+
+<table>
+  <tr>
+    <th>Titulo</th>
+    <th>Idioma</th>
+    <th>Descripcion</th>
+    <th>Palabras Clave</th>
+    <th>Ambito</th>
+  </tr>
+  <% for oa in @oas %>
+    <tr>
+      <td><%= image_tag oa.media.url(:thumb) %></td>
+      <td><%=h oa.media_file_name %></td>
+      <td><%=h oa.titulo %></td>
+      <td><%=h oa.idioma %></td>
+      <td><%=h oa.descripcion %></td>
+      <td><%=h oa.palabras_clave %></td>
+      <td><%=h oa.ambito %></td>
+      <td><%= link_to "Show", oa %></td>
+      <td><%= link_to "Edit", edit_oa_path(oa) %></td>
+      <td><%= link_to "Destroy", oa, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Oa", new_oa_path %></p>
