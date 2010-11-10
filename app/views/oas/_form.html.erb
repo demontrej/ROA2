@@ -20,10 +20,45 @@
     <%= f.label :ambito %><br />
     <%= f.text_field :ambito %>
   </p>
- <p>
-    <%= f.label :media, "Recurso" %>
+   <p>
+    <%= f.label :media,"file" %><br />
     <%= f.file_field :media %>
-
+  </p>
+ <p>
+    <%= f.label :Tipodeinteracctividad, "Tipo de interacctividad" %><br />
+    <%= f.text_field :Tipodeinteracctividad %>
+  </p>
+  <p>
+    <%= f.label :Tipoderecurso, "Tipo de recurso" %><br />
+    <%= f.text_field :Tipoderecurso %>
+  </p>
+  <p>
+    <%= f.label :Nivelinteractividad, "Nivel de interactividad" %><br />
+    <%= f.text_field :Nivelinteractividad %>
+  </p>
+  <p>
+    <%= f.label :Densidadsemantica, "Densidad semantica" %><br />
+    <%= f.text_field :Densidadsemantica %>
+  </p>
+  <p>
+    <%= f.label :Destinatario, "Destinatario" %><br />
+    <%= f.text_field :Destinatario %>
+  </p>
+  <p>
+    <%= f.label :Contexto, "Contexto" %><br />
+    <%= f.text_field :Contexto %>
+  </p>
+  <p>
+    <%= f.label :Rangotipicoedad, "Rango tipico de edad" %><br />
+    <%= f.text_field :Rangotipicoedad %>
+  </p>
+  <p>
+    <%= f.label :Dificultad, "Dificultad" %><br />
+    <%= f.text_field :Dificultad %>
+  </p>
+  <p>
+    <%= f.label :tiempodeaprendizaje, "tiempodeaprendizaje" %><br />
+    <%= f.text_field :tiempodeaprendizaje %>
   </p>
   <p><%= f.submit %></p>
 <% end %>

@@ -14,7 +14,7 @@ class OasController < ApplicationController
   def create
     @oa = Oa.new(params[:oa])
     if @oa.save
-      flash[:notice] = "Successfully created oa."
+      flash[:notice] = "Objeto creado exitosamente."
       redirect_to @oa
     else
       render :action => 'new'
@@ -28,7 +28,7 @@ class OasController < ApplicationController
   def update
     @oa = Oa.find(params[:id])
     if @oa.update_attributes(params[:oa])
-      flash[:notice] = "Successfully updated oa."
+      flash[:notice] = "Objeto actualizado exitosamente."
       redirect_to @oa
     else
       render :action => 'edit'
@@ -38,7 +38,7 @@ class OasController < ApplicationController
   def destroy
     @oa = Oa.find(params[:id])
     @oa.destroy
-    flash[:notice] = "Successfully destroyed oa."
+    flash[:notice] = "Objeto Eliminado exitosamente."
     redirect_to oas_url
   end
 end

@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101108005110) do
+ActiveRecord::Schema.define(:version => 20101109171843) do
 
   create_table "libros", :force => true do |t|
     t.string   "titulo"
@@ -30,6 +30,15 @@ ActiveRecord::Schema.define(:version => 20101108005110) do
     t.string   "media_content_type"
     t.integer  "media_file_size"
     t.datetime "media_updated_at"
+    t.string   "Tipodeinteracctividad"
+    t.string   "Tipoderecurso"
+    t.string   "Nivelinteractividad"
+    t.string   "Densidadsemantica"
+    t.string   "Destinatario"
+    t.string   "Contexto"
+    t.string   "Rangotipicoedad"
+    t.string   "Dificultad"
+    t.string   "tiempodeaprendizaje"
   end
 
   create_table "tecnicas", :force => true do |t|
@@ -48,6 +57,18 @@ ActiveRecord::Schema.define(:version => 20101108005110) do
     t.string   "status"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "nombreapellido"
+    t.string   "pais"
+    t.string   "ciudad"
+    t.string   "idioma"
+    t.string   "sexo"
+    t.date     "fechanacimiento"
+    t.string   "cargo"
+    t.string   "skype"
+    t.string   "foto_file_name"
+    t.string   "foto_content_type"
+    t.integer  "foto_file_size"
+    t.datetime "foto_updated_at"
   end
 
 end

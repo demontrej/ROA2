@@ -6,45 +6,65 @@
     <%= stylesheet_link_tag 'application' %>
     <%= yield(:head) %>
   </head>
+
+
   <body>
-    <div id="container">
+    <div id="wrap">
       <div id="header">
+        <h1><a href="http://127.0.0.1:3000/">Repositorio de Objetos de Aprendizaje</a></h1>
+        <h2>Instituto Exclusivo</h2>
         <div id="user_nav">
           <% if current_user %>
             Bienvenido <b><%= h  current_user.username %></b>
-            <%= link_to "Editar perfil", edit_user_path(:current) %> |
+            <%= link_to "Editar perfil", edit_user_path(current_user) %> |
             <%= link_to "Salir", logout_path %>
           <% else %>
             <%= link_to "Registro", new_user_path %> |
             <%= link_to "Entrar", login_path %>
           <% end %>
+            
+        </div>
+      </div>
+        <div id="menu">
+          <ul>
+            <li><a href="http://127.0.0.1:3000/">Inicio</a></li>
+            <li><a href="http://127.0.0.1:3000/users">Usuarios</a></li>
+            <li><a href="#">Photos</a></li>
+            <li><a href="#">Links</a></li>
+            <li><a href="#">Forum</a></li>
+            <li><a href="#">Free Stuff</a></li>
+            <li><a href="#">Downloads</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">SiteMap</a></li>
+          </ul>
+        </div>
+        <div id="content">
+          <div class="left">
             <%- flash.each do |name, msg| -%>
             <%= content_tag :div, msg, :id => "flash_#{name}" %>
             <%- end -%>
-        </div>
-      </div>
-      <div id="navigation">
-        1,2,3,4,5
-      
-
-      </div>
-      <div id="content">
-          <%- if show_title? -%>
+             <%- if show_title? -%>
           <h1><%=h yield(:title) %></h1>
             <%- end -%>
           <%= yield %>
+          </div>
+          <div class="right">
+            <h2>Categorias :</h2>
+              <ul>
+              <li><a href="#">Los más vistos</a></li>
+              <li><a href="#">Los más votados</a></li>
+              <li><a href="#">Los más comentados</a></li>
+              <li><a href="#">Recientes</a></li>
+              
+              </ul>
+          </div>
+          <div style ="clear: both;"</div>
+        </div>
+
       </div>
-      <div id="menu">
-    jodas que se me inventen
-      </div>
+
       <div id="footer">
-100% jc
+        <a href="http://www.instituto-exclusivo.com/" target="_blank">Instituto-Exclusivo</a> by Juanca 2010
       </div>
-
-      
-      
-
-      
-    </div>
   </body>
 </html>

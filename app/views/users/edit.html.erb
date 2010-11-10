@@ -1,4 +1,57 @@
-<% title "Edit User" %>
+<% title "Actualización de datos de Usuario" %>
+chingao!!
+<%#= render :partial => 'form' %>
 
-<%= render :partial => 'form' %>
-
+<% form_for @user do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :username %><br />
+    <%= f.text_field :username %>
+  </p>
+  <p>
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </p>
+  <p>
+    <%= f.label :password %><br />
+    <%= f.password_field :password %>
+  </p>
+  <p>
+    <%= f.label :password_confirmation %><br />
+    <%= f.password_field :password_confirmation %>
+  </p>
+  <p>
+    <%= f.label :role %><br />
+    <%#= f.text_field :role %>
+    <%= f.collection_select :role, User::ROLES, :to_s, :humanize %>
+  </p>
+  <p>
+    <%= f.label :estado %><br />
+    <%= f.text_field :status %>
+  </p>
+  <p>
+    <%= f.label :username %><br />
+    <%= f.text_field :username %>
+  </p>
+  <p>
+    <%= f.label :username %><br />
+    <%= f.text_field :username %>
+  </p>
+  <p>
+    <%= f.label :username %><br />
+    <%= f.text_field :username %>
+  </p>
+  <p>
+    <%= f.label :username %><br />
+    <%= f.text_field :username %>
+  </p>
+  <p>
+    <%= f.label :username %><br />
+    <%= f.text_field :username %>
+  </p>
+  <p>
+    <%= f.label :username %><br />
+    <%= f.text_field :username %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

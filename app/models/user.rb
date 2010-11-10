@@ -1,5 +1,5 @@
 class User < ActiveRecord::Base
-  attr_accessible :username, :email, :password, :password_confirmation, :role
+  attr_accessible :username, :email, :password, :password_confirmation, :role, :status
   acts_as_authentic
   ROLES = %w[admin teacher student]
   #para autenticarse el usernme o email
