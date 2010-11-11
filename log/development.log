@@ -19271,3 +19271,2781 @@ Processing UsersController#edit (for 127.0.0.1 at 2010-11-09 22:35:25) [GET]
 Rendering template within layouts/application
 Rendering users/edit
 Completed in 52ms (View: 37, DB: 2) | 200 OK [http://127.0.0.1/users/2/edit]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OasController#index (for 127.0.0.1 at 2010-11-09 23:59:27) [GET]
+  Parameters: {"action"=>"index", "controller"=>"oas"}
+  [4;36;1mOa Load (0.3ms)[0m   [0;1mSELECT * FROM `oas` [0m
+Rendering template within layouts/application
+Rendering oas/index
+  [4;35;1mOa Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `oas`[0m
+  [4;36;1mUser Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Completed in 84ms (View: 60, DB: 5) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OasController#edit (for 127.0.0.1 at 2010-11-09 23:59:32) [GET]
+  Parameters: {"action"=>"edit", "id"=>"7", "controller"=>"oas"}
+  [4;35;1mOa Columns (7.2ms)[0m   [0mSHOW FIELDS FROM `oas`[0m
+  [4;36;1mOa Load (0.2ms)[0m   [0;1mSELECT * FROM `oas` WHERE (`oas`.`id` = 7) [0m
+Rendering template within layouts/application
+Rendering oas/edit
+Rendered oas/_form (19.6ms)
+  [4;35;1mUser Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Completed in 79ms (View: 60, DB: 9) | 200 OK [http://127.0.0.1/oas/7/edit]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OasController#new (for 127.0.0.1 at 2010-11-09 23:59:43) [GET]
+  Parameters: {"action"=>"new", "controller"=>"oas"}
+  [4;36;1mOa Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `oas`[0m
+Rendering template within layouts/application
+Rendering oas/new
+Rendered oas/_form (17.0ms)
+  [4;35;1mUser Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Completed in 138ms (View: 126, DB: 4) | 200 OK [http://127.0.0.1/oas/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-11-10 00:11:21) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 35ms (View: 20, DB: 2) | 200 OK [http://127.0.0.1/login]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-11-10 00:11:23) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+  [4;35;1mUser Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_form (11.7ms)
+Completed in 55ms (View: 40, DB: 2) | 200 OK [http://127.0.0.1/users/new]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OasController#index (for 127.0.0.1 at 2010-11-10 14:32:02) [GET]
+  Parameters: {"action"=>"index", "controller"=>"oas"}
+  [4;36;1mOa Load (14.0ms)[0m   [0;1mSELECT * FROM `oas` [0m
+Rendering template within layouts/application
+Rendering oas/index
+  [4;35;1mOa Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `oas`[0m
+  [4;36;1mUser Columns (2.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Completed in 251ms (View: 180, DB: 20) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OasController#show (for 127.0.0.1 at 2010-11-10 14:32:14) [GET]
+  Parameters: {"action"=>"show", "id"=>"7", "controller"=>"oas"}
+  [4;35;1mOa Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `oas`[0m
+  [4;36;1mOa Load (0.8ms)[0m   [0;1mSELECT * FROM `oas` WHERE (`oas`.`id` = 7) [0m
+Rendering template within layouts/application
+Rendering oas/show
+  [4;35;1mUser Columns (2.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Completed in 73ms (View: 59, DB: 6) | 200 OK [http://127.0.0.1/oas/7]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OasController#index (for 127.0.0.1 at 2010-11-10 14:47:09) [GET]
+  Parameters: {"action"=>"index", "controller"=>"oas"}
+  [4;36;1mOa Load (0.3ms)[0m   [0;1mSELECT * FROM `oas` [0m
+Rendering template within layouts/application
+Rendering oas/index
+  [4;35;1mOa Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `oas`[0m
+  [4;36;1mUser Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Completed in 140ms (View: 129, DB: 5) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OasController#index (for 127.0.0.1 at 2010-11-10 14:47:41) [GET]
+  Parameters: {"action"=>"index", "controller"=>"oas"}
+  [4;35;1mOa Load (0.3ms)[0m   [0mSELECT * FROM `oas` [0m
+Rendering template within layouts/application
+Rendering oas/index
+  [4;36;1mOa Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `oas`[0m
+  [4;35;1mUser Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Completed in 48ms (View: 38, DB: 4) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-11-10 14:47:50) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+  [4;36;1mUser Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 56ms (View: 33, DB: 2) | 200 OK [http://127.0.0.1/login]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#create (for 127.0.0.1 at 2010-11-10 14:48:08) [POST]
+  Parameters: {"commit"=>"Save changes", "user_session"=>{"username"=>"1234", "password"=>"[FILTERED]"}, "action"=>"create", "authenticity_token"=>"XtFQvpvM0uOzqFOCAJmnAIpqy3qHShCONHsA789r3rQ=", "controller"=>"user_sessions"}
+  [4;35;1mUser Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.9ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`username` = '1234') LIMIT 1[0m
+Redirected to http://127.0.0.1:3000/
+Completed in 71ms (DB: 3) | 302 Found [http://127.0.0.1/user_sessions]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OasController#index (for 127.0.0.1 at 2010-11-10 14:48:08) [GET]
+  Parameters: {"action"=>"index", "controller"=>"oas"}
+  [4;35;1mOa Load (0.3ms)[0m   [0mSELECT * FROM `oas` [0m
+Rendering template within layouts/application
+Rendering oas/index
+  [4;36;1mOa Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `oas`[0m
+  [4;35;1mUser Columns (2.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.7ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '7') LIMIT 1[0m
+Completed in 173ms (View: 161, DB: 6) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OasController#edit (for 127.0.0.1 at 2010-11-10 14:48:24) [GET]
+  Parameters: {"action"=>"edit", "id"=>"18", "controller"=>"oas"}
+  [4;35;1mOa Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `oas`[0m
+  [4;36;1mOa Load (0.6ms)[0m   [0;1mSELECT * FROM `oas` WHERE (`oas`.`id` = 18) [0m
+Rendering template within layouts/application
+Rendering oas/edit
+Rendered oas/_form (70.9ms)
+  [4;35;1mUser Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '7') LIMIT 1[0m
+Completed in 114ms (View: 100, DB: 6) | 200 OK [http://127.0.0.1/oas/18/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OasController#update (for 127.0.0.1 at 2010-11-10 14:48:32) [PUT]
+  Parameters: {"commit"=>"Save changes", "action"=>"update", "_method"=>"put", "authenticity_token"=>"XtFQvpvM0uOzqFOCAJmnAIpqy3qHShCONHsA789r3rQ=", "id"=>"18", "oa"=>{"tiempodeaprendizaje"=>"", "Contexto"=>"", "Tipoderecurso"=>"", "Densidadsemantica"=>"", "Nivelinteractividad"=>"", "idioma"=>"español", "titulo"=>"uso y forma de Ser+adjetivo", "descripcion"=>"diferentes usos del verbo ser", "Rangotipicoedad"=>"", "ambito"=>"", "palabras_clave"=>"", "Destinatario"=>"", "Tipodeinteracctividad"=>"", "Dificultad"=>""}, "controller"=>"oas"}
+  [4;35;1mOa Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `oas`[0m
+  [4;36;1mOa Load (0.3ms)[0m   [0;1mSELECT * FROM `oas` WHERE (`oas`.`id` = 18) [0m
+WARNING: Can't mass-assign these protected attributes: tiempodeaprendizaje, Contexto, Tipoderecurso, Densidadsemantica, Nivelinteractividad, Rangotipicoedad, Destinatario, Tipodeinteracctividad, Dificultad
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+[paperclip] Saving attachments.
+  [4;36;1mSQL (0.2ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/oas/18
+Completed in 18ms (DB: 2) | 302 Found [http://127.0.0.1/oas/18]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OasController#show (for 127.0.0.1 at 2010-11-10 14:48:32) [GET]
+  Parameters: {"action"=>"show", "id"=>"18", "controller"=>"oas"}
+  [4;35;1mOa Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `oas`[0m
+  [4;36;1mOa Load (0.3ms)[0m   [0;1mSELECT * FROM `oas` WHERE (`oas`.`id` = 18) [0m
+Rendering template within layouts/application
+Rendering oas/show
+  [4;35;1mUser Columns (2.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '7') LIMIT 1[0m
+Completed in 60ms (View: 46, DB: 6) | 200 OK [http://127.0.0.1/oas/18]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OasController#index (for 127.0.0.1 at 2010-11-11 08:23:49) [GET]
+  Parameters: {"action"=>"index", "controller"=>"oas"}
+  [4;36;1mOa Load (0.7ms)[0m   [0;1mSELECT * FROM `oas` [0m
+Rendering template within layouts/application
+Rendering oas/index
+  [4;35;1mOa Columns (4.4ms)[0m   [0mSHOW FIELDS FROM `oas`[0m
+  [4;36;1mUser Columns (2.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Completed in 190ms (View: 131, DB: 8) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-11-11 08:23:51) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;35;1mUser Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.4ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering users/index
+Completed in 59ms (View: 39, DB: 3) | 200 OK [http://127.0.0.1/users]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-11-11 08:23:52) [GET]
+  Parameters: {"action"=>"edit", "id"=>"4", "controller"=>"users"}
+  [4;35;1mUser Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 4) [0m
+Rendering template within layouts/application
+Rendering users/edit
+Completed in 115ms (View: 99, DB: 3) | 200 OK [http://127.0.0.1/users/4/edit]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-11-11 08:29:48) [GET]
+  Parameters: {"action"=>"edit", "id"=>"4", "controller"=>"users"}
+  [4;35;1mUser Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 4) [0m
+Rendering template within layouts/application
+Rendering users/edit
+Completed in 41ms (View: 25, DB: 3) | 200 OK [http://127.0.0.1/users/4/edit]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-11-11 08:30:37) [GET]
+  Parameters: {"action"=>"edit", "id"=>"4", "controller"=>"users"}
+  [4;35;1mUser Columns (3.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 4) [0m
+Rendering template within layouts/application
+Rendering users/edit
+Completed in 37ms (View: 21, DB: 4) | 200 OK [http://127.0.0.1/users/4/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-11-11 08:31:11) [GET]
+  Parameters: {"action"=>"edit", "id"=>"4", "controller"=>"users"}
+  [4;35;1mUser Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 4) [0m
+Rendering template within layouts/application
+Rendering users/edit
+
+ActionView::TemplateError (undefined method `foto' for #<User:0x99babdc>) on line #9 of app/views/users/edit.html.erb:
+6:   <%= f.error_messages %>
+7:   <p>
+8:     <%= f.label :Foto %><br />
+9:     <%= f.text_field :foto %>
+10:   </p>
+11:   <p>
+12:     <%= f.label :username %><br />
+
+    app/views/users/edit.html.erb:9
+    app/views/users/edit.html.erb:5
+
+Rendered rescues/_trace (151.1ms)
+Rendered rescues/_request_and_response (3.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-11-11 08:31:54) [GET]
+  Parameters: {"action"=>"edit", "id"=>"4", "controller"=>"users"}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 4) [0m
+Rendering template within layouts/application
+Rendering users/edit
+Completed in 46ms (View: 33, DB: 2) | 200 OK [http://127.0.0.1/users/4/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#update (for 127.0.0.1 at 2010-11-11 08:35:58) [PUT]
+  Parameters: {"commit"=>"Save changes", "action"=>"update", "_method"=>"put", "authenticity_token"=>"gqj/+Iwz0GeCt40rObM/F3Ej6dKJEILY485piYT9lGo=", "id"=>"4", "controller"=>"users", "user"=>{"skype"=>"", "fechanacimiento"=>"", "idioma"=>"", "password_confirmation"=>"[FILTERED]", "role"=>"admin", "username"=>"jc1", "cargo"=>"", "ciudad"=>"", "pais"=>"", "sexo"=>"", "nombreapellido"=>"", "status"=>"", "password"=>"[FILTERED]", "email"=>"j@gmail.com"}}
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 4) [0m
+WARNING: Can't mass-assign these protected attributes: skype, fechanacimiento, idioma, cargo, ciudad, pais, sexo, nombreapellido
+  [4;35;1mSQL (0.4ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.6ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-11-11 12:35:58', `status` = '' WHERE `id` = 4[0m
+  [4;35;1mSQL (56.1ms)[0m   [0mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/
+Completed in 83ms (DB: 59) | 302 Found [http://127.0.0.1/users/4]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OasController#index (for 127.0.0.1 at 2010-11-11 08:35:59) [GET]
+  Parameters: {"action"=>"index", "controller"=>"oas"}
+  [4;36;1mOa Load (0.2ms)[0m   [0;1mSELECT * FROM `oas` [0m
+Rendering template within layouts/application
+Rendering oas/index
+  [4;35;1mOa Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `oas`[0m
+  [4;36;1mUser Columns (2.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Completed in 124ms (View: 113, DB: 5) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-11-11 08:36:05) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;35;1mUser Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.7ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering users/index
+Completed in 58ms (View: 38, DB: 3) | 200 OK [http://127.0.0.1/users]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-11-11 08:36:06) [GET]
+  Parameters: {"action"=>"edit", "id"=>"4", "controller"=>"users"}
+  [4;35;1mUser Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 4) [0m
+Rendering template within layouts/application
+Rendering users/edit
+Completed in 57ms (View: 34, DB: 3) | 200 OK [http://127.0.0.1/users/4/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-11-11 09:11:05) [GET]
+  Parameters: {"action"=>"edit", "id"=>"4", "controller"=>"users"}
+  [4;35;1mUser Columns (3.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 4) [0m
+Rendering template within layouts/application
+Rendering users/edit
+
+ActionView::TemplateError (undefined method `date_field' for #<ActionView::Helpers::FormBuilder:0x9961488>) on line #58 of app/views/users/edit.html.erb:
+55:   </p>
+56:   <p>
+57:     <%= f.label :"Fecha de nacimiento" %><br />
+58:     <%= f.date_field :fechanacimiento %>
+59:   </p>
+60:   <p>
+61:     <%= f.label :Cargo %><br />
+
+    app/views/users/edit.html.erb:58
+    app/views/users/edit.html.erb:5
+
+Rendered rescues/_trace (137.0ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-11-11 09:11:17) [GET]
+  Parameters: {"action"=>"edit", "id"=>"4", "controller"=>"users"}
+  [4;35;1mUser Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 4) [0m
+Rendering template within layouts/application
+Rendering users/edit
+Completed in 49ms (View: 34, DB: 3) | 200 OK [http://127.0.0.1/users/4/edit]
+  [4;35;1mSQL (0.7ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-11-11 09:30:23) [GET]
+  Parameters: {"action"=>"edit", "id"=>"4", "controller"=>"users"}
+  [4;35;1mUser Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 4) [0m
+Rendering template within layouts/application
+Rendering users/edit
+Completed in 44ms (View: 30, DB: 3) | 200 OK [http://127.0.0.1/users/4/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-11-11 09:31:24) [GET]
+  Parameters: {"action"=>"edit", "id"=>"4", "controller"=>"users"}
+  [4;35;1mUser Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 4) [0m
+Rendering template within layouts/application
+Rendering users/edit
+Completed in 34ms (View: 18, DB: 2) | 200 OK [http://127.0.0.1/users/4/edit]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-11-11 09:31:43) [GET]
+  Parameters: {"action"=>"edit", "id"=>"4", "controller"=>"users"}
+  [4;35;1mUser Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 4) [0m
+Rendering template within layouts/application
+Rendering users/edit
+Completed in 38ms (View: 20, DB: 2) | 200 OK [http://127.0.0.1/users/4/edit]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-11-11 09:52:28) [GET]
+  Parameters: {"action"=>"edit", "id"=>"4", "controller"=>"users"}
+  [4;35;1mUser Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 4) [0m
+Rendering template within layouts/application
+Rendering users/edit
+Completed in 37ms (View: 22, DB: 3) | 200 OK [http://127.0.0.1/users/4/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-11-11 09:53:20) [GET]
+  Parameters: {"action"=>"edit", "id"=>"4", "controller"=>"users"}
+  [4;35;1mUser Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 4) [0m
+Rendering template within layouts/application
+Rendering users/edit
+Completed in 35ms (View: 21, DB: 2) | 200 OK [http://127.0.0.1/users/4/edit]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-11-11 09:53:51) [GET]
+  Parameters: {"action"=>"edit", "id"=>"4", "controller"=>"users"}
+  [4;35;1mUser Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 4) [0m
+Rendering template within layouts/application
+Rendering users/edit
+Completed in 124ms (View: 25, DB: 3) | 200 OK [http://127.0.0.1/users/4/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-11-11 09:54:18) [GET]
+  Parameters: {"action"=>"edit", "id"=>"4", "controller"=>"users"}
+  [4;35;1mUser Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 4) [0m
+Rendering template within layouts/application
+Rendering users/edit
+Completed in 49ms (View: 36, DB: 3) | 200 OK [http://127.0.0.1/users/4/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-11-11 09:54:59) [GET]
+  Parameters: {"action"=>"edit", "id"=>"4", "controller"=>"users"}
+  [4;35;1mUser Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 4) [0m
+Rendering template within layouts/application
+Rendering users/edit
+Completed in 35ms (View: 22, DB: 2) | 200 OK [http://127.0.0.1/users/4/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-11-11 09:55:47) [GET]
+  Parameters: {"action"=>"edit", "id"=>"4", "controller"=>"users"}
+  [4;35;1mUser Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 4) [0m
+Rendering template within layouts/application
+Rendering users/edit
+Completed in 40ms (View: 26, DB: 2) | 200 OK [http://127.0.0.1/users/4/edit]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-11-11 10:06:13) [GET]
+  Parameters: {"action"=>"edit", "id"=>"4", "controller"=>"users"}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 4) [0m
+Rendering template within layouts/application
+Rendering users/edit
+Completed in 131ms (View: 32, DB: 2) | 200 OK [http://127.0.0.1/users/4/edit]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-11-11 10:07:06) [GET]
+  Parameters: {"action"=>"edit", "id"=>"4", "controller"=>"users"}
+  [4;35;1mUser Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 4) [0m
+Rendering template within layouts/application
+Rendering users/edit
+Completed in 38ms (View: 24, DB: 2) | 200 OK [http://127.0.0.1/users/4/edit]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-11-11 10:07:44) [GET]
+  Parameters: {"action"=>"edit", "id"=>"4", "controller"=>"users"}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 4) [0m
+Rendering template within layouts/application
+Rendering users/edit
+Completed in 42ms (View: 24, DB: 2) | 200 OK [http://127.0.0.1/users/4/edit]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#update (for 127.0.0.1 at 2010-11-11 10:07:50) [PUT]
+  Parameters: {"commit"=>"Save changes", "action"=>"update", "_method"=>"put", "authenticity_token"=>"gqj/+Iwz0GeCt40rObM/F3Ej6dKJEILY485piYT9lGo=", "id"=>"4", "controller"=>"users", "user"=>{"skype"=>"", "created_at"=>"2010-11-02 15:11:40", "fechanacimiento"=>"", "idioma"=>"", "password_confirmation"=>"[FILTERED]", "role"=>"admin", "username"=>"jc1", "cargo"=>"", "ciudad"=>"", "pais"=>"", "sexo"=>"hombre", "nombreapellido"=>"", "status"=>"activo", "password"=>"[FILTERED]", "email"=>"j@gmail.com"}}
+  [4;35;1mUser Columns (2.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 4) [0m
+WARNING: Can't mass-assign these protected attributes: skype, created_at, fechanacimiento, idioma, cargo, ciudad, pais, nombreapellido
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.7ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-11-11 14:07:51', `sexo` = 'hombre', `status` = 'activo' WHERE `id` = 4[0m
+  [4;35;1mSQL (52.8ms)[0m   [0mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/
+Completed in 79ms (DB: 57) | 302 Found [http://127.0.0.1/users/4]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OasController#index (for 127.0.0.1 at 2010-11-11 10:07:51) [GET]
+  Parameters: {"action"=>"index", "controller"=>"oas"}
+  [4;36;1mOa Load (0.4ms)[0m   [0;1mSELECT * FROM `oas` [0m
+Rendering template within layouts/application
+Rendering oas/index
+  [4;35;1mOa Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `oas`[0m
+  [4;36;1mUser Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Completed in 138ms (View: 125, DB: 5) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-11-11 10:07:53) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+  [4;35;1mUser Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_form (10.2ms)
+Completed in 60ms (View: 43, DB: 2) | 200 OK [http://127.0.0.1/users/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-11-11 10:07:56) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;36;1mUser Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering users/index
+Completed in 42ms (View: 28, DB: 2) | 200 OK [http://127.0.0.1/users]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-11-11 10:07:58) [GET]
+  Parameters: {"action"=>"edit", "id"=>"5", "controller"=>"users"}
+  [4;36;1mUser Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 5) [0m
+Rendering template within layouts/application
+Rendering users/edit
+Completed in 37ms (View: 21, DB: 4) | 200 OK [http://127.0.0.1/users/5/edit]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#update (for 127.0.0.1 at 2010-11-11 10:08:04) [PUT]
+  Parameters: {"commit"=>"Save changes", "action"=>"update", "_method"=>"put", "authenticity_token"=>"gqj/+Iwz0GeCt40rObM/F3Ej6dKJEILY485piYT9lGo=", "id"=>"5", "controller"=>"users", "user"=>{"skype"=>"", "created_at"=>"2010-11-06 23:56:42", "fechanacimiento"=>"", "idioma"=>"", "password_confirmation"=>"[FILTERED]", "role"=>"admin", "username"=>"admin", "cargo"=>"", "ciudad"=>"", "pais"=>"", "sexo"=>"hombre", "nombreapellido"=>"", "status"=>"activo", "password"=>"[FILTERED]", "email"=>"admin@admin.com"}}
+  [4;36;1mUser Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 5) [0m
+WARNING: Can't mass-assign these protected attributes: skype, created_at, fechanacimiento, idioma, cargo, ciudad, pais, nombreapellido
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.7ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-11-11 14:08:04', `sexo` = 'hombre', `status` = 'activo' WHERE `id` = 5[0m
+  [4;36;1mSQL (47.4ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/
+Completed in 156ms (DB: 51) | 302 Found [http://127.0.0.1/users/5]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OasController#index (for 127.0.0.1 at 2010-11-11 10:08:04) [GET]
+  Parameters: {"action"=>"index", "controller"=>"oas"}
+  [4;35;1mOa Load (0.3ms)[0m   [0mSELECT * FROM `oas` [0m
+Rendering template within layouts/application
+Rendering oas/index
+  [4;36;1mOa Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `oas`[0m
+  [4;35;1mUser Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Completed in 48ms (View: 37, DB: 4) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-11-11 10:08:05) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;36;1mUser Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering users/index
+Completed in 45ms (View: 30, DB: 3) | 200 OK [http://127.0.0.1/users]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-11-11 10:08:08) [GET]
+  Parameters: {"action"=>"edit", "id"=>"4", "controller"=>"users"}
+  [4;36;1mUser Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 4) [0m
+Rendering template within layouts/application
+Rendering users/edit
+Completed in 34ms (View: 20, DB: 3) | 200 OK [http://127.0.0.1/users/4/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#update (for 127.0.0.1 at 2010-11-11 10:08:12) [PUT]
+  Parameters: {"commit"=>"Save changes", "action"=>"update", "_method"=>"put", "authenticity_token"=>"gqj/+Iwz0GeCt40rObM/F3Ej6dKJEILY485piYT9lGo=", "id"=>"4", "controller"=>"users", "user"=>{"skype"=>"", "created_at"=>"2010-11-02 15:11:40", "fechanacimiento"=>"", "idioma"=>"", "password_confirmation"=>"[FILTERED]", "role"=>"admin", "username"=>"jc1", "cargo"=>"", "ciudad"=>"", "pais"=>"", "sexo"=>"_", "nombreapellido"=>"", "status"=>"activo", "password"=>"[FILTERED]", "email"=>"j@gmail.com"}}
+  [4;36;1mUser Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 4) [0m
+WARNING: Can't mass-assign these protected attributes: skype, created_at, fechanacimiento, idioma, cargo, ciudad, pais, nombreapellido
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.5ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-11-11 14:08:12', `sexo` = '_' WHERE `id` = 4[0m
+  [4;36;1mSQL (32.8ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/
+Completed in 61ms (DB: 36) | 302 Found [http://127.0.0.1/users/4]
+  [4;35;1mSQL (0.4ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OasController#index (for 127.0.0.1 at 2010-11-11 10:08:12) [GET]
+  Parameters: {"action"=>"index", "controller"=>"oas"}
+  [4;35;1mOa Load (0.3ms)[0m   [0mSELECT * FROM `oas` [0m
+Rendering template within layouts/application
+Rendering oas/index
+  [4;36;1mOa Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `oas`[0m
+  [4;35;1mUser Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Completed in 52ms (View: 37, DB: 4) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-11-11 10:08:14) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering users/index
+Completed in 51ms (View: 31, DB: 2) | 200 OK [http://127.0.0.1/users]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-11-11 10:08:16) [GET]
+  Parameters: {"action"=>"edit", "id"=>"4", "controller"=>"users"}
+  [4;36;1mUser Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 4) [0m
+Rendering template within layouts/application
+Rendering users/edit
+Completed in 38ms (View: 21, DB: 3) | 200 OK [http://127.0.0.1/users/4/edit]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#update (for 127.0.0.1 at 2010-11-11 10:08:21) [PUT]
+  Parameters: {"commit"=>"Save changes", "action"=>"update", "_method"=>"put", "authenticity_token"=>"gqj/+Iwz0GeCt40rObM/F3Ej6dKJEILY485piYT9lGo=", "id"=>"4", "controller"=>"users", "user"=>{"skype"=>"", "created_at"=>"2010-11-02 15:11:40", "fechanacimiento"=>"", "idioma"=>"", "password_confirmation"=>"[FILTERED]", "role"=>"admin", "username"=>"jc1", "cargo"=>"", "ciudad"=>"", "pais"=>"", "sexo"=>"hombre", "nombreapellido"=>"", "status"=>"activo", "password"=>"[FILTERED]", "email"=>"j@gmail.com"}}
+  [4;36;1mUser Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 4) [0m
+WARNING: Can't mass-assign these protected attributes: skype, created_at, fechanacimiento, idioma, cargo, ciudad, pais, nombreapellido
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (1.3ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-11-11 14:08:21', `sexo` = 'hombre' WHERE `id` = 4[0m
+  [4;36;1mSQL (116.7ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/
+Completed in 142ms (DB: 120) | 302 Found [http://127.0.0.1/users/4]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OasController#index (for 127.0.0.1 at 2010-11-11 10:08:21) [GET]
+  Parameters: {"action"=>"index", "controller"=>"oas"}
+  [4;35;1mOa Load (0.3ms)[0m   [0mSELECT * FROM `oas` [0m
+Rendering template within layouts/application
+Rendering oas/index
+  [4;36;1mOa Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `oas`[0m
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Completed in 63ms (View: 41, DB: 4) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-11-11 10:12:16) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;36;1mUser Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering users/index
+Completed in 47ms (View: 33, DB: 3) | 200 OK [http://127.0.0.1/users]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-11-11 10:12:18) [GET]
+  Parameters: {"action"=>"edit", "id"=>"3", "controller"=>"users"}
+  [4;36;1mUser Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 3) [0m
+Rendering template within layouts/application
+Rendering users/edit
+Completed in 39ms (View: 24, DB: 3) | 200 OK [http://127.0.0.1/users/3/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-11-11 10:12:27) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_form (8.7ms)
+Completed in 29ms (View: 15, DB: 2) | 200 OK [http://127.0.0.1/users/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-11-11 10:12:41) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+  [4;35;1mUser Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_form (9.8ms)
+Completed in 29ms (View: 15, DB: 2) | 200 OK [http://127.0.0.1/users/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-11-11 10:12:42) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+  [4;36;1mUser Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 51ms (View: 33, DB: 2) | 200 OK [http://127.0.0.1/login]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-11-11 10:12:45) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering users/index
+Completed in 47ms (View: 33, DB: 2) | 200 OK [http://127.0.0.1/users]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-11-11 10:12:46) [GET]
+  Parameters: {"action"=>"edit", "id"=>"3", "controller"=>"users"}
+  [4;35;1mUser Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 3) [0m
+Rendering template within layouts/application
+Rendering users/edit
+Completed in 111ms (View: 97, DB: 2) | 200 OK [http://127.0.0.1/users/3/edit]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-11-11 10:15:34) [GET]
+  Parameters: {"action"=>"edit", "id"=>"3", "controller"=>"users"}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 3) [0m
+Rendering template within layouts/application
+Rendering users/edit
+Completed in 47ms (View: 31, DB: 2) | 200 OK [http://127.0.0.1/users/3/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-11-11 10:19:53) [GET]
+  Parameters: {"action"=>"edit", "id"=>"3", "controller"=>"users"}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 3) [0m
+Rendering template within layouts/application
+Rendering users/edit
+Completed in 35ms (View: 20, DB: 3) | 200 OK [http://127.0.0.1/users/3/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-11-11 10:24:12) [GET]
+  Parameters: {"action"=>"edit", "id"=>"3", "controller"=>"users"}
+  [4;35;1mUser Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 3) [0m
+Rendering template within layouts/application
+Rendering users/edit
+Completed in 45ms (View: 30, DB: 2) | 200 OK [http://127.0.0.1/users/3/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-11-11 10:24:59) [GET]
+  Parameters: {"action"=>"edit", "id"=>"3", "controller"=>"users"}
+  [4;35;1mUser Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 3) [0m
+Rendering template within layouts/application
+Rendering users/edit
+Completed in 117ms (View: 102, DB: 3) | 200 OK [http://127.0.0.1/users/3/edit]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-11-11 10:25:58) [GET]
+  Parameters: {"action"=>"edit", "id"=>"3", "controller"=>"users"}
+  [4;35;1mUser Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 3) [0m
+Rendering template within layouts/application
+Rendering users/edit
+Completed in 43ms (View: 28, DB: 2) | 200 OK [http://127.0.0.1/users/3/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-11-11 10:26:01) [GET]
+  Parameters: {"action"=>"edit", "id"=>"3", "controller"=>"users"}
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 3) [0m
+Rendering template within layouts/application
+Rendering users/edit
+Completed in 38ms (View: 22, DB: 2) | 200 OK [http://127.0.0.1/users/3/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-11-11 10:26:12) [GET]
+  Parameters: {"action"=>"edit", "id"=>"3", "controller"=>"users"}
+  [4;35;1mUser Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 3) [0m
+Rendering template within layouts/application
+Rendering users/edit
+Completed in 46ms (View: 30, DB: 2) | 200 OK [http://127.0.0.1/users/3/edit]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-11-11 10:26:13) [GET]
+  Parameters: {"action"=>"edit", "id"=>"3", "controller"=>"users"}
+  [4;35;1mUser Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 3) [0m
+Rendering template within layouts/application
+Rendering users/edit
+Completed in 143ms (View: 36, DB: 2) | 200 OK [http://127.0.0.1/users/3/edit]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-11-11 10:26:13) [GET]
+  Parameters: {"action"=>"edit", "id"=>"3", "controller"=>"users"}
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 3) [0m
+Rendering template within layouts/application
+Rendering users/edit
+Completed in 37ms (View: 24, DB: 2) | 200 OK [http://127.0.0.1/users/3/edit]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-11-11 10:28:56) [GET]
+  Parameters: {"action"=>"edit", "id"=>"3", "controller"=>"users"}
+  [4;35;1mUser Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 3) [0m
+Rendering template within layouts/application
+Rendering users/edit
+Completed in 33ms (View: 19, DB: 2) | 200 OK [http://127.0.0.1/users/3/edit]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-11-11 10:28:58) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;35;1mUser Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering users/index
+Completed in 47ms (View: 33, DB: 2) | 200 OK [http://127.0.0.1/users]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-11-11 10:29:00) [GET]
+  Parameters: {"action"=>"edit", "id"=>"4", "controller"=>"users"}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.7ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 4) [0m
+Rendering template within layouts/application
+Rendering users/edit
+Completed in 120ms (View: 103, DB: 2) | 200 OK [http://127.0.0.1/users/4/edit]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-11-11 10:29:03) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;35;1mUser Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering users/index
+Completed in 46ms (View: 28, DB: 2) | 200 OK [http://127.0.0.1/users]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-11-11 10:29:05) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"users"}
+  [4;35;1mUser Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+
+ActionView::MissingTemplate (Missing template users/show.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-11-11 10:29:09) [GET]
+  Parameters: {"action"=>"edit", "id"=>"2", "controller"=>"users"}
+  [4;35;1mUser Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering users/edit
+Completed in 38ms (View: 21, DB: 3) | 200 OK [http://127.0.0.1/users/2/edit]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#update (for 127.0.0.1 at 2010-11-11 10:30:05) [PUT]
+  Parameters: {"commit"=>"Guardar cambios", "action"=>"update", "_method"=>"put", "authenticity_token"=>"gqj/+Iwz0GeCt40rObM/F3Ej6dKJEILY485piYT9lGo=", "id"=>"2", "controller"=>"users", "user"=>{"skype"=>"barrebdero.ie", "created_at"=>"2010-11-02 03:30:17", "fechanacimiento"=>"", "idioma"=>"spanish", "password_confirmation"=>"[FILTERED]", "role"=>"student", "username"=>"student", "cargo"=>"barrendero", "ciudad"=>"el alto", "pais"=>"bolivia", "sexo"=>"hombre", "nombreapellido"=>"Juancito Pinto", "status"=>"activo", "password"=>"[FILTERED]", "email"=>"student@gmail.com"}}
+  [4;35;1mUser Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+WARNING: Can't mass-assign these protected attributes: created_at
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (1.0ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-11-11 14:30:05', `sexo` = 'hombre', `skype` = 'barrebdero.ie', `idioma` = 'spanish', `nombreapellido` = 'Juancito Pinto', `status` = 'activo', `cargo` = 'barrendero', `pais` = 'bolivia', `ciudad` = 'el alto' WHERE `id` = 2[0m
+  [4;35;1mSQL (119.5ms)[0m   [0mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/
+Completed in 146ms (DB: 123) | 302 Found [http://127.0.0.1/users/2]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OasController#index (for 127.0.0.1 at 2010-11-11 10:30:05) [GET]
+  Parameters: {"action"=>"index", "controller"=>"oas"}
+  [4;36;1mOa Load (0.3ms)[0m   [0;1mSELECT * FROM `oas` [0m
+Rendering template within layouts/application
+Rendering oas/index
+  [4;35;1mOa Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `oas`[0m
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Completed in 49ms (View: 38, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-11-11 10:30:10) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;35;1mUser Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.2ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering users/index
+Completed in 49ms (View: 32, DB: 3) | 200 OK [http://127.0.0.1/users]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-11-11 10:30:11) [GET]
+  Parameters: {"action"=>"edit", "id"=>"2", "controller"=>"users"}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering users/edit
+Completed in 38ms (View: 23, DB: 3) | 200 OK [http://127.0.0.1/users/2/edit]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#update (for 127.0.0.1 at 2010-11-11 10:31:02) [PUT]
+  Parameters: {"commit"=>"Guardar cambios", "action"=>"update", "_method"=>"put", "authenticity_token"=>"gqj/+Iwz0GeCt40rObM/F3Ej6dKJEILY485piYT9lGo=", "id"=>"2", "controller"=>"users", "user"=>{"skype"=>"barrebdero.ie", "created_at"=>"2010-11-02 03:30:17", "fechanacimiento"=>"", "idioma"=>"spanish", "password_confirmation"=>"[FILTERED]", "role"=>"student", "username"=>"student", "cargo"=>"barrendero", "ciudad"=>"el alto", "pais"=>"bolivia", "sexo"=>"hombre", "nombreapellido"=>"Juancito Pinto", "status"=>"inactivo", "password"=>"[FILTERED]", "email"=>"student@gmail.com"}}
+  [4;35;1mUser Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+WARNING: Can't mass-assign these protected attributes: created_at
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (1.2ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-11-11 14:31:02', `status` = 'inactivo' WHERE `id` = 2[0m
+  [4;35;1mSQL (48.4ms)[0m   [0mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/
+Completed in 76ms (DB: 53) | 302 Found [http://127.0.0.1/users/2]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OasController#index (for 127.0.0.1 at 2010-11-11 10:31:02) [GET]
+  Parameters: {"action"=>"index", "controller"=>"oas"}
+  [4;36;1mOa Load (0.2ms)[0m   [0;1mSELECT * FROM `oas` [0m
+Rendering template within layouts/application
+Rendering oas/index
+  [4;35;1mOa Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `oas`[0m
+  [4;36;1mUser Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Completed in 58ms (View: 43, DB: 4) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OasController#index (for 127.0.0.1 at 2010-11-11 10:33:24) [GET]
+  Parameters: {"action"=>"index", "controller"=>"oas"}
+  [4;35;1mOa Load (0.3ms)[0m   [0mSELECT * FROM `oas` [0m
+Rendering template within layouts/application
+Rendering oas/index
+  [4;36;1mOa Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `oas`[0m
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Completed in 53ms (View: 42, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-11-11 10:33:26) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;36;1mUser Columns (2.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering users/index
+Completed in 45ms (View: 29, DB: 4) | 200 OK [http://127.0.0.1/users]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OasController#index (for 127.0.0.1 at 2010-11-11 10:33:28) [GET]
+  Parameters: {"action"=>"index", "controller"=>"oas"}
+  [4;36;1mOa Load (0.4ms)[0m   [0;1mSELECT * FROM `oas` [0m
+Rendering template within layouts/application
+Rendering oas/index
+  [4;35;1mOa Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `oas`[0m
+  [4;36;1mUser Columns (2.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Completed in 143ms (View: 130, DB: 6) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LibrosController#index (for 127.0.0.1 at 2010-11-11 10:33:31) [GET]
+  Parameters: {"action"=>"index", "controller"=>"libros"}
+  [4;35;1mUser Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mLibro Load (0.5ms)[0m   [0;1mSELECT * FROM `libros` [0m
+Rendering template within layouts/application
+Rendering libros/index
+  [4;35;1mLibro Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `libros`[0m
+Completed in 81ms (View: 44, DB: 4) | 200 OK [http://127.0.0.1/libros]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LibrosController#show (for 127.0.0.1 at 2010-11-11 10:33:33) [GET]
+  Parameters: {"action"=>"show", "id"=>"2", "controller"=>"libros"}
+  [4;36;1mLibro Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `libros`[0m
+  [4;35;1mLibro Load (0.5ms)[0m   [0mSELECT * FROM `libros` WHERE (`libros`.`id` = 2) [0m
+  [4;36;1mUser Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `libros` WHERE (`libros`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering libros/show
+Completed in 52ms (View: 16, DB: 4) | 200 OK [http://127.0.0.1/libros/2]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LibrosController#edit (for 127.0.0.1 at 2010-11-11 10:33:37) [GET]
+  Parameters: {"action"=>"edit", "id"=>"2", "controller"=>"libros"}
+  [4;36;1mLibro Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `libros`[0m
+  [4;35;1mLibro Load (0.2ms)[0m   [0mSELECT * FROM `libros` WHERE (`libros`.`id` = 2) [0m
+  [4;36;1mUser Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+
+CanCan::AccessDenied (You are not authorized to access this page.):
+  cancan (1.4.0) lib/cancan/ability.rb:204:in `authorize!'
+  cancan (1.4.0) lib/cancan/controller_additions.rb:250:in `authorize!'
+  cancan (1.4.0) lib/cancan/controller_resource.rb:37:in `authorize_resource'
+  cancan (1.4.0) lib/cancan/controller_resource.rb:25:in `load_and_authorize_resource'
+  cancan (1.4.0) lib/cancan/controller_resource.rb:9:in `send'
+  cancan (1.4.0) lib/cancan/controller_resource.rb:9:in `add_before_filter'
+
+Rendered rescues/_trace (135.8ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-11-11 10:35:15) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;35;1mUser Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering users/index
+Completed in 53ms (View: 35, DB: 2) | 200 OK [http://127.0.0.1/users]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-11-11 10:35:17) [GET]
+  Parameters: {"action"=>"edit", "id"=>"2", "controller"=>"users"}
+  [4;35;1mUser Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering users/edit
+Completed in 51ms (View: 37, DB: 3) | 200 OK [http://127.0.0.1/users/2/edit]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#update (for 127.0.0.1 at 2010-11-11 10:35:33) [PUT]
+  Parameters: {"commit"=>"Guardar cambios", "action"=>"update", "_method"=>"put", "authenticity_token"=>"gqj/+Iwz0GeCt40rObM/F3Ej6dKJEILY485piYT9lGo=", "id"=>"2", "controller"=>"users", "user"=>{"skype"=>"barrebdero.ie", "created_at"=>"2010-11-02 03:30:17", "fechanacimiento"=>"", "idioma"=>"spanish", "password_confirmation"=>"[FILTERED]", "role"=>"student", "username"=>"student", "cargo"=>"barrendero", "ciudad"=>"el alto", "pais"=>"bolivia", "sexo"=>"_", "nombreapellido"=>"Juancito Pinto", "status"=>"inactivo", "password"=>"[FILTERED]", "email"=>"student@gmail.com"}}
+  [4;35;1mUser Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+WARNING: Can't mass-assign these protected attributes: created_at
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.6ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-11-11 14:35:33', `sexo` = '_' WHERE `id` = 2[0m
+  [4;35;1mSQL (478.5ms)[0m   [0mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/
+Completed in 505ms (DB: 482) | 302 Found [http://127.0.0.1/users/2]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OasController#index (for 127.0.0.1 at 2010-11-11 10:35:33) [GET]
+  Parameters: {"action"=>"index", "controller"=>"oas"}
+  [4;36;1mOa Load (0.3ms)[0m   [0;1mSELECT * FROM `oas` [0m
+Rendering template within layouts/application
+Rendering oas/index
+  [4;35;1mOa Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `oas`[0m
+  [4;36;1mUser Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Completed in 45ms (View: 35, DB: 4) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-11-11 10:37:29) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;35;1mUser Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering users/index
+Completed in 44ms (View: 29, DB: 3) | 200 OK [http://127.0.0.1/users]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-11-11 10:41:58) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+  [4;35;1mUser Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_form (10.6ms)
+Completed in 29ms (View: 16, DB: 2) | 200 OK [http://127.0.0.1/users/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-11-11 10:42:25) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;36;1mUser Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (2.0ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering users/index
+Completed in 129ms (View: 108, DB: 4) | 200 OK [http://127.0.0.1/users]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-11-11 10:42:27) [GET]
+  Parameters: {"action"=>"edit", "id"=>"2", "controller"=>"users"}
+  [4;36;1mUser Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering users/edit
+Completed in 35ms (View: 19, DB: 3) | 200 OK [http://127.0.0.1/users/2/edit]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-11-11 10:50:15) [GET]
+  Parameters: {"action"=>"edit", "id"=>"2", "controller"=>"users"}
+  [4;36;1mUser Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering users/edit
+Completed in 47ms (View: 32, DB: 2) | 200 OK [http://127.0.0.1/users/2/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#update (for 127.0.0.1 at 2010-11-11 10:54:13) [PUT]
+  Parameters: {"commit"=>"Guardar cambios", "action"=>"update", "_method"=>"put", "authenticity_token"=>"gqj/+Iwz0GeCt40rObM/F3Ej6dKJEILY485piYT9lGo=", "id"=>"2", "range"=>{"start_date(1i)"=>"2007", "start_date(2i)"=>"2", "start_date(3i)"=>"16"}, "controller"=>"users", "user"=>{"skype"=>"barrebdero.ie", "created_at"=>"2010-11-02 03:30:17", "fechanacimiento"=>"", "idioma"=>"spanish", "password_confirmation"=>"[FILTERED]", "role"=>"student", "username"=>"student", "cargo"=>"barrendero", "ciudad"=>"el alto", "pais"=>"bolivia", "sexo"=>"_", "nombreapellido"=>"Juancito Pinto", "status"=>"inactivo", "password"=>"[FILTERED]", "email"=>"student@gmail.com"}}
+  [4;36;1mUser Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+WARNING: Can't mass-assign these protected attributes: created_at
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/
+Completed in 26ms (DB: 3) | 302 Found [http://127.0.0.1/users/2]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OasController#index (for 127.0.0.1 at 2010-11-11 10:54:13) [GET]
+  Parameters: {"action"=>"index", "controller"=>"oas"}
+  [4;36;1mOa Load (0.3ms)[0m   [0;1mSELECT * FROM `oas` [0m
+Rendering template within layouts/application
+Rendering oas/index
+  [4;35;1mOa Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `oas`[0m
+  [4;36;1mUser Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Completed in 145ms (View: 129, DB: 4) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-11-11 10:54:15) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;35;1mUser Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering users/index
+Completed in 56ms (View: 39, DB: 3) | 200 OK [http://127.0.0.1/users]
+  [4;35;1mSQL (1.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-11-11 10:54:18) [GET]
+  Parameters: {"action"=>"edit", "id"=>"2", "controller"=>"users"}
+  [4;35;1mUser Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering users/edit
+Completed in 41ms (View: 24, DB: 4) | 200 OK [http://127.0.0.1/users/2/edit]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-11-11 10:59:39) [GET]
+  Parameters: {"action"=>"edit", "id"=>"2", "controller"=>"users"}
+  [4;35;1mUser Columns (2.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering users/edit
+Completed in 49ms (View: 34, DB: 3) | 200 OK [http://127.0.0.1/users/2/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#update (for 127.0.0.1 at 2010-11-11 10:59:45) [PUT]
+  Parameters: {"commit"=>"Guardar cambios", "action"=>"update", "_method"=>"put", "authenticity_token"=>"gqj/+Iwz0GeCt40rObM/F3Ej6dKJEILY485piYT9lGo=", "id"=>"2", "controller"=>"users", "user"=>{"skype"=>"barrebdero.ie", "fechanacimiento(1i)"=>"2007", "created_at"=>"2010-11-02 03:30:17", "fechanacimiento(2i)"=>"2", "fechanacimiento"=>"", "fechanacimiento(3i)"=>"18", "idioma"=>"spanish", "password_confirmation"=>"[FILTERED]", "role"=>"student", "username"=>"student", "cargo"=>"barrendero", "ciudad"=>"el alto", "pais"=>"bolivia", "sexo"=>"_", "nombreapellido"=>"Juancito Pinto", "status"=>"inactivo", "password"=>"[FILTERED]", "email"=>"student@gmail.com"}}
+  [4;35;1mUser Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+WARNING: Can't mass-assign these protected attributes: created_at
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (1.0ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-11-11 14:59:45', `fechanacimiento` = '2007-02-18' WHERE `id` = 2[0m
+  [4;35;1mSQL (55.7ms)[0m   [0mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/
+Completed in 184ms (DB: 59) | 302 Found [http://127.0.0.1/users/2]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OasController#index (for 127.0.0.1 at 2010-11-11 10:59:45) [GET]
+  Parameters: {"action"=>"index", "controller"=>"oas"}
+  [4;36;1mOa Load (0.3ms)[0m   [0;1mSELECT * FROM `oas` [0m
+Rendering template within layouts/application
+Rendering oas/index
+  [4;35;1mOa Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `oas`[0m
+  [4;36;1mUser Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Completed in 54ms (View: 43, DB: 4) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-11-11 10:59:48) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.7ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering users/index
+Completed in 43ms (View: 29, DB: 2) | 200 OK [http://127.0.0.1/users]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-11-11 10:59:50) [GET]
+  Parameters: {"action"=>"edit", "id"=>"2", "controller"=>"users"}
+  [4;35;1mUser Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering users/edit
+Completed in 43ms (View: 27, DB: 3) | 200 OK [http://127.0.0.1/users/2/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#update (for 127.0.0.1 at 2010-11-11 11:00:05) [PUT]
+  Parameters: {"commit"=>"Guardar cambios", "action"=>"update", "_method"=>"put", "authenticity_token"=>"gqj/+Iwz0GeCt40rObM/F3Ej6dKJEILY485piYT9lGo=", "id"=>"2", "controller"=>"users", "user"=>{"skype"=>"barrebdero.ie", "fechanacimiento(1i)"=>"2002", "created_at"=>"2010-11-02 03:30:17", "fechanacimiento(2i)"=>"2", "fechanacimiento"=>"2007-02-18", "fechanacimiento(3i)"=>"18", "idioma"=>"spanish", "password_confirmation"=>"[FILTERED]", "role"=>"student", "username"=>"student", "cargo"=>"barrendero", "ciudad"=>"el alto", "pais"=>"bolivia", "sexo"=>"_", "nombreapellido"=>"Juancito Pinto", "status"=>"inactivo", "password"=>"[FILTERED]", "email"=>"student@gmail.com"}}
+  [4;35;1mUser Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+WARNING: Can't mass-assign these protected attributes: created_at
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (15.0ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-11-11 15:00:05', `fechanacimiento` = '2002-02-18' WHERE `id` = 2[0m
+  [4;35;1mSQL (42.2ms)[0m   [0mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/
+Completed in 163ms (DB: 60) | 302 Found [http://127.0.0.1/users/2]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OasController#index (for 127.0.0.1 at 2010-11-11 11:00:06) [GET]
+  Parameters: {"action"=>"index", "controller"=>"oas"}
+  [4;36;1mOa Load (0.3ms)[0m   [0;1mSELECT * FROM `oas` [0m
+Rendering template within layouts/application
+Rendering oas/index
+  [4;35;1mOa Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `oas`[0m
+  [4;36;1mUser Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Completed in 52ms (View: 42, DB: 4) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-11-11 11:00:07) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;35;1mUser Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.7ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering users/index
+Completed in 49ms (View: 35, DB: 2) | 200 OK [http://127.0.0.1/users]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-11-11 11:00:18) [GET]
+  Parameters: {"action"=>"edit", "id"=>"2", "controller"=>"users"}
+  [4;35;1mUser Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering users/edit
+Completed in 38ms (View: 24, DB: 3) | 200 OK [http://127.0.0.1/users/2/edit]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-11-11 11:00:53) [GET]
+  Parameters: {"action"=>"edit", "id"=>"2", "controller"=>"users"}
+  [4;35;1mUser Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering users/edit
+Completed in 125ms (View: 36, DB: 2) | 200 OK [http://127.0.0.1/users/2/edit]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#update (for 127.0.0.1 at 2010-11-11 11:01:32) [PUT]
+  Parameters: {"commit"=>"Guardar cambios", "action"=>"update", "_method"=>"put", "authenticity_token"=>"gqj/+Iwz0GeCt40rObM/F3Ej6dKJEILY485piYT9lGo=", "id"=>"2", "controller"=>"users", "user"=>{"skype"=>"barrebdero.ie", "fechanacimiento(1i)"=>"1999", "created_at"=>"2010-11-02 03:30:17", "fechanacimiento(2i)"=>"4", "fechanacimiento"=>"2002-02-18", "fechanacimiento(3i)"=>"30", "idioma"=>"spanish", "password_confirmation"=>"[FILTERED]", "role"=>"student", "username"=>"student", "cargo"=>"barrendero", "ciudad"=>"el alto", "pais"=>"bolivia", "sexo"=>"_", "nombreapellido"=>"Juancito Pinto", "status"=>"inactivo", "password"=>"[FILTERED]", "email"=>"student@gmail.com"}}
+  [4;35;1mUser Columns (2.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+WARNING: Can't mass-assign these protected attributes: created_at
+  [4;35;1mSQL (0.4ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.6ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-11-11 15:01:32', `fechanacimiento` = '1999-04-30' WHERE `id` = 2[0m
+  [4;35;1mSQL (57.4ms)[0m   [0mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/
+Completed in 91ms (DB: 61) | 302 Found [http://127.0.0.1/users/2]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OasController#index (for 127.0.0.1 at 2010-11-11 11:01:32) [GET]
+  Parameters: {"action"=>"index", "controller"=>"oas"}
+  [4;36;1mOa Load (0.3ms)[0m   [0;1mSELECT * FROM `oas` [0m
+Rendering template within layouts/application
+Rendering oas/index
+  [4;35;1mOa Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `oas`[0m
+  [4;36;1mUser Columns (2.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Completed in 54ms (View: 43, DB: 5) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-11-11 11:01:35) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;35;1mUser Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.1ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering users/index
+Completed in 47ms (View: 33, DB: 3) | 200 OK [http://127.0.0.1/users]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-11-11 11:01:37) [GET]
+  Parameters: {"action"=>"edit", "id"=>"2", "controller"=>"users"}
+  [4;35;1mUser Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.7ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering users/edit
+Completed in 45ms (View: 28, DB: 3) | 200 OK [http://127.0.0.1/users/2/edit]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-11-11 11:03:06) [GET]
+  Parameters: {"action"=>"edit", "id"=>"2", "controller"=>"users"}
+  [4;35;1mUser Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering users/edit
+Completed in 38ms (View: 24, DB: 2) | 200 OK [http://127.0.0.1/users/2/edit]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-11-11 11:18:06) [GET]
+  Parameters: {"action"=>"edit", "id"=>"2", "controller"=>"users"}
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering users/edit
+Completed in 43ms (View: 30, DB: 2) | 200 OK [http://127.0.0.1/users/2/edit]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-11-11 11:23:02) [GET]
+  Parameters: {"action"=>"edit", "id"=>"2", "controller"=>"users"}
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+Rendering template within layouts/application
+Rendering users/edit
+Completed in 117ms (View: 103, DB: 2) | 200 OK [http://127.0.0.1/users/2/edit]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#new (for 127.0.0.1 at 2010-11-11 11:23:20) [GET]
+  Parameters: {"action"=>"new", "controller"=>"user_sessions"}
+  [4;35;1mUser Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering user_sessions/new
+Completed in 47ms (View: 7, DB: 2) | 200 OK [http://127.0.0.1/login]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-11-11 11:23:21) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+  [4;36;1mUser Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_form (8.8ms)
+Completed in 29ms (View: 14, DB: 2) | 200 OK [http://127.0.0.1/users/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-11-11 11:23:44) [POST]
+  Parameters: {"commit"=>"Save changes", "action"=>"create", "authenticity_token"=>"gqj/+Iwz0GeCt40rObM/F3Ej6dKJEILY485piYT9lGo=", "controller"=>"users", "user"=>{"password_confirmation"=>"[FILTERED]", "role"=>"admin", "username"=>"prueba", "password"=>"[FILTERED]", "email"=>"prueba@gmail.com"}}
+  [4;35;1mUser Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (33.7ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'prueba@gmail.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`username`) = BINARY 'prueba') LIMIT 1[0m
+  [4;35;1mUser Load (0.8ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY 'bff448215230b564a1eb531f1c860a5af0b660d1bc55cd8ccb06a0ce1c0ea5e4dbc9656a8e55071456b758e889c98427e1e4ffc1beb593cd68cf79cb767a9ef7') LIMIT 1[0m
+  [4;36;1mUser Create (19.7ms)[0m   [0;1mINSERT INTO `users` (`skype`, `created_at`, `crypted_password`, `fechanacimiento`, `foto_file_size`, `updated_at`, `idioma`, `username`, `role`, `password_salt`, `ciudad`, `cargo`, `persistence_token`, `pais`, `foto_content_type`, `foto_file_name`, `status`, `nombreapellido`, `sexo`, `foto_updated_at`, `email`) VALUES(NULL, '2010-11-11 15:23:44', 'ba7474c36ce97a950e5572492380e685a4c3c7401f8aa4a6865b82d13cf75a5461292d9ec2adf7c38efd175f35234f55f7c64560a29c4185d41b4ad4bfcaa3b2', NULL, NULL, '2010-11-11 15:23:44', NULL, 'prueba', 'admin', 't9ngQwCEX74YvVcorhUt', NULL, NULL, 'bff448215230b564a1eb531f1c860a5af0b660d1bc55cd8ccb06a0ce1c0ea5e4dbc9656a8e55071456b758e889c98427e1e4ffc1beb593cd68cf79cb767a9ef7', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'prueba@gmail.com')[0m
+  [4;35;1mSQL (49.8ms)[0m   [0mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/
+Completed in 465ms (DB: 107) | 302 Found [http://127.0.0.1/users]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OasController#index (for 127.0.0.1 at 2010-11-11 11:23:44) [GET]
+  Parameters: {"action"=>"index", "controller"=>"oas"}
+  [4;36;1mOa Load (0.3ms)[0m   [0;1mSELECT * FROM `oas` [0m
+Rendering template within layouts/application
+Rendering oas/index
+  [4;35;1mOa Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `oas`[0m
+  [4;36;1mUser Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`persistence_token` = 'bff448215230b564a1eb531f1c860a5af0b660d1bc55cd8ccb06a0ce1c0ea5e4dbc9656a8e55071456b758e889c98427e1e4ffc1beb593cd68cf79cb767a9ef7') LIMIT 1[0m
+Completed in 61ms (View: 49, DB: 5) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-11-11 11:23:46) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering users/index
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = 'bff448215230b564a1eb531f1c860a5af0b660d1bc55cd8ccb06a0ce1c0ea5e4dbc9656a8e55071456b758e889c98427e1e4ffc1beb593cd68cf79cb767a9ef7') LIMIT 1[0m
+Completed in 55ms (View: 39, DB: 3) | 200 OK [http://127.0.0.1/users]
+  [4;35;1mSQL (0.4ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-11-11 11:23:49) [GET]
+  Parameters: {"action"=>"edit", "id"=>"9", "controller"=>"users"}
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (3.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 9) [0m
+Rendering template within layouts/application
+Rendering users/edit
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`persistence_token` = 'bff448215230b564a1eb531f1c860a5af0b660d1bc55cd8ccb06a0ce1c0ea5e4dbc9656a8e55071456b758e889c98427e1e4ffc1beb593cd68cf79cb767a9ef7') LIMIT 1[0m
+Completed in 48ms (View: 30, DB: 6) | 200 OK [http://127.0.0.1/users/9/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-11-11 11:25:02) [GET]
+  Parameters: {"action"=>"edit", "id"=>"9", "controller"=>"users"}
+  [4;36;1mUser Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 9) [0m
+Rendering template within layouts/application
+Rendering users/edit
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = 'bff448215230b564a1eb531f1c860a5af0b660d1bc55cd8ccb06a0ce1c0ea5e4dbc9656a8e55071456b758e889c98427e1e4ffc1beb593cd68cf79cb767a9ef7') LIMIT 1[0m
+Completed in 52ms (View: 38, DB: 2) | 200 OK [http://127.0.0.1/users/9/edit]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-11-11 11:31:43) [GET]
+  Parameters: {"action"=>"edit", "id"=>"9", "controller"=>"users"}
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 9) [0m
+Rendering template within layouts/application
+Rendering users/edit
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`persistence_token` = 'bff448215230b564a1eb531f1c860a5af0b660d1bc55cd8ccb06a0ce1c0ea5e4dbc9656a8e55071456b758e889c98427e1e4ffc1beb593cd68cf79cb767a9ef7') LIMIT 1[0m
+Completed in 67ms (View: 48, DB: 2) | 200 OK [http://127.0.0.1/users/9/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-11-11 11:32:11) [GET]
+  Parameters: {"action"=>"edit", "id"=>"9", "controller"=>"users"}
+  [4;36;1mUser Columns (4.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 9) [0m
+Rendering template within layouts/application
+Rendering users/edit
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = 'bff448215230b564a1eb531f1c860a5af0b660d1bc55cd8ccb06a0ce1c0ea5e4dbc9656a8e55071456b758e889c98427e1e4ffc1beb593cd68cf79cb767a9ef7') LIMIT 1[0m
+Completed in 64ms (View: 43, DB: 5) | 200 OK [http://127.0.0.1/users/9/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-11-11 11:34:05) [GET]
+  Parameters: {"action"=>"edit", "id"=>"9", "controller"=>"users"}
+  [4;35;1mUser Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 9) [0m
+Rendering template within layouts/application
+Rendering users/edit
+
+ActionView::TemplateError (undefined method `select_daydíamonthmesyearaño' for #<ActionView::Helpers::DateTimeSelector:0xb30414c>) on line #60 of app/views/users/edit.html.erb:
+57:   <p>
+58:     <%= f.label :"Fecha de nacimiento" %><br />
+59:     <%= f.text_field :fechanacimiento %>
+60:     <%= date_select('user', 'fechanacimiento', :order => [:day => 'día',:month => 'mes', :year=> 'año'],:include_blank => true, :start_year => Time.now.year-5, :end_year => Time.now.year-70, :use_month_names => %w(_ enero febrero marzo abril mayo junio julio agosto septiembre octubre noviembre diciembre mayo))%>
+61:   </p>
+62:   <p>
+63:     <%= f.label :Cargo %><br />
+
+    app/views/users/edit.html.erb:60
+    app/views/users/edit.html.erb:5
+
+Rendered rescues/_trace (64.0ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-11-11 11:34:53) [GET]
+  Parameters: {"action"=>"edit", "id"=>"9", "controller"=>"users"}
+  [4;35;1mUser Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 9) [0m
+Rendering template within layouts/application
+Rendering users/edit
+
+ActionView::TemplateError (undefined method `select_daydíamonthmesyearaño' for #<ActionView::Helpers::DateTimeSelector:0xb39ae6c>) on line #60 of app/views/users/edit.html.erb:
+57:   <p>
+58:     <%= f.label :"Fecha de nacimiento" %><br />
+59:     <%= f.text_field :fechanacimiento %>
+60:     <%= date_select('user', 'fechanacimiento', :order => [:day => "día",:month => "mes", :year=> "año"],:include_blank => true, :start_year => Time.now.year-5, :end_year => Time.now.year-70, :use_month_names => %w(_ enero febrero marzo abril mayo junio julio agosto septiembre octubre noviembre diciembre mayo))%>
+61:   </p>
+62:   <p>
+63:     <%= f.label :Cargo %><br />
+
+    app/views/users/edit.html.erb:60
+    app/views/users/edit.html.erb:5
+
+Rendered rescues/_trace (64.3ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-11-11 11:34:55) [GET]
+  Parameters: {"action"=>"edit", "id"=>"9", "controller"=>"users"}
+  [4;35;1mUser Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 9) [0m
+Rendering template within layouts/application
+Rendering users/edit
+
+ActionView::TemplateError (undefined method `select_daydíamonthmesyearaño' for #<ActionView::Helpers::DateTimeSelector:0xb1ea234>) on line #60 of app/views/users/edit.html.erb:
+57:   <p>
+58:     <%= f.label :"Fecha de nacimiento" %><br />
+59:     <%= f.text_field :fechanacimiento %>
+60:     <%= date_select('user', 'fechanacimiento', :order => [:day => "día",:month => "mes", :year=> "año"],:include_blank => true, :start_year => Time.now.year-5, :end_year => Time.now.year-70, :use_month_names => %w(_ enero febrero marzo abril mayo junio julio agosto septiembre octubre noviembre diciembre mayo))%>
+61:   </p>
+62:   <p>
+63:     <%= f.label :Cargo %><br />
+
+    app/views/users/edit.html.erb:60
+    app/views/users/edit.html.erb:5
+
+Rendered rescues/_trace (71.4ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-11-11 11:34:55) [GET]
+  Parameters: {"action"=>"edit", "id"=>"9", "controller"=>"users"}
+  [4;35;1mUser Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 9) [0m
+Rendering template within layouts/application
+Rendering users/edit
+
+ActionView::TemplateError (undefined method `select_daydíamonthmesyearaño' for #<ActionView::Helpers::DateTimeSelector:0xb2aa494>) on line #60 of app/views/users/edit.html.erb:
+57:   <p>
+58:     <%= f.label :"Fecha de nacimiento" %><br />
+59:     <%= f.text_field :fechanacimiento %>
+60:     <%= date_select('user', 'fechanacimiento', :order => [:day => "día",:month => "mes", :year=> "año"],:include_blank => true, :start_year => Time.now.year-5, :end_year => Time.now.year-70, :use_month_names => %w(_ enero febrero marzo abril mayo junio julio agosto septiembre octubre noviembre diciembre mayo))%>
+61:   </p>
+62:   <p>
+63:     <%= f.label :Cargo %><br />
+
+    app/views/users/edit.html.erb:60
+    app/views/users/edit.html.erb:5
+
+Rendered rescues/_trace (155.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-11-11 11:34:56) [GET]
+  Parameters: {"action"=>"edit", "id"=>"9", "controller"=>"users"}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 9) [0m
+Rendering template within layouts/application
+Rendering users/edit
+
+ActionView::TemplateError (undefined method `select_daydíamonthmesyearaño' for #<ActionView::Helpers::DateTimeSelector:0xb34f6d8>) on line #60 of app/views/users/edit.html.erb:
+57:   <p>
+58:     <%= f.label :"Fecha de nacimiento" %><br />
+59:     <%= f.text_field :fechanacimiento %>
+60:     <%= date_select('user', 'fechanacimiento', :order => [:day => "día",:month => "mes", :year=> "año"],:include_blank => true, :start_year => Time.now.year-5, :end_year => Time.now.year-70, :use_month_names => %w(_ enero febrero marzo abril mayo junio julio agosto septiembre octubre noviembre diciembre mayo))%>
+61:   </p>
+62:   <p>
+63:     <%= f.label :Cargo %><br />
+
+    app/views/users/edit.html.erb:60
+    app/views/users/edit.html.erb:5
+
+Rendered rescues/_trace (74.6ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-11-11 11:35:53) [GET]
+  Parameters: {"action"=>"edit", "id"=>"9", "controller"=>"users"}
+  [4;35;1mUser Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 9) [0m
+Rendering template within layouts/application
+Rendering users/edit
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`persistence_token` = 'bff448215230b564a1eb531f1c860a5af0b660d1bc55cd8ccb06a0ce1c0ea5e4dbc9656a8e55071456b758e889c98427e1e4ffc1beb593cd68cf79cb767a9ef7') LIMIT 1[0m
+Completed in 167ms (View: 41, DB: 3) | 200 OK [http://127.0.0.1/users/9/edit]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#update (for 127.0.0.1 at 2010-11-11 11:36:00) [PUT]
+  Parameters: {"commit"=>"Guardar cambios", "action"=>"update", "_method"=>"put", "authenticity_token"=>"gqj/+Iwz0GeCt40rObM/F3Ej6dKJEILY485piYT9lGo=", "id"=>"9", "controller"=>"users", "user"=>{"skype"=>"", "fechanacimiento(1i)"=>"1999", "created_at"=>"2010-11-11 15:23:44", "fechanacimiento(2i)"=>"10", "fechanacimiento"=>"", "fechanacimiento(3i)"=>"16", "idioma"=>"", "password_confirmation"=>"[FILTERED]", "role"=>"admin", "username"=>"prueba", "cargo"=>"", "ciudad"=>"", "pais"=>"", "sexo"=>"_", "nombreapellido"=>"", "status"=>"activo", "password"=>"[FILTERED]", "email"=>"prueba@gmail.com"}}
+  [4;36;1mUser Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 9) [0m
+WARNING: Can't mass-assign these protected attributes: created_at
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.9ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-11-11 15:36:00', `fechanacimiento` = '1999-10-16', `sexo` = '_', `skype` = '', `idioma` = '', `nombreapellido` = '', `status` = 'activo', `cargo` = '', `pais` = '', `ciudad` = '' WHERE `id` = 9[0m
+  [4;36;1mSQL (30.1ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/
+Completed in 60ms (DB: 34) | 302 Found [http://127.0.0.1/users/9]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OasController#index (for 127.0.0.1 at 2010-11-11 11:36:00) [GET]
+  Parameters: {"action"=>"index", "controller"=>"oas"}
+  [4;35;1mOa Load (0.5ms)[0m   [0mSELECT * FROM `oas` [0m
+Rendering template within layouts/application
+Rendering oas/index
+  [4;36;1mOa Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `oas`[0m
+  [4;35;1mUser Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = 'bff448215230b564a1eb531f1c860a5af0b660d1bc55cd8ccb06a0ce1c0ea5e4dbc9656a8e55071456b758e889c98427e1e4ffc1beb593cd68cf79cb767a9ef7') LIMIT 1[0m
+Completed in 64ms (View: 49, DB: 6) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-11-11 11:36:03) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;35;1mUser Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.2ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering users/index
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`persistence_token` = 'bff448215230b564a1eb531f1c860a5af0b660d1bc55cd8ccb06a0ce1c0ea5e4dbc9656a8e55071456b758e889c98427e1e4ffc1beb593cd68cf79cb767a9ef7') LIMIT 1[0m
+Completed in 161ms (View: 141, DB: 3) | 200 OK [http://127.0.0.1/users]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-11-11 11:36:06) [GET]
+  Parameters: {"action"=>"edit", "id"=>"9", "controller"=>"users"}
+  [4;36;1mUser Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 9) [0m
+Rendering template within layouts/application
+Rendering users/edit
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = 'bff448215230b564a1eb531f1c860a5af0b660d1bc55cd8ccb06a0ce1c0ea5e4dbc9656a8e55071456b758e889c98427e1e4ffc1beb593cd68cf79cb767a9ef7') LIMIT 1[0m
+Completed in 49ms (View: 31, DB: 4) | 200 OK [http://127.0.0.1/users/9/edit]
+  [4;35;1mSQL (0.4ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-11-11 11:37:27) [GET]
+  Parameters: {"action"=>"edit", "id"=>"9", "controller"=>"users"}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 9) [0m
+Rendering template within layouts/application
+Rendering users/edit
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`persistence_token` = 'bff448215230b564a1eb531f1c860a5af0b660d1bc55cd8ccb06a0ce1c0ea5e4dbc9656a8e55071456b758e889c98427e1e4ffc1beb593cd68cf79cb767a9ef7') LIMIT 1[0m
+Completed in 52ms (View: 37, DB: 3) | 200 OK [http://127.0.0.1/users/9/edit]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-11-11 11:38:28) [GET]
+  Parameters: {"action"=>"edit", "id"=>"9", "controller"=>"users"}
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 9) [0m
+Rendering template within layouts/application
+Rendering users/edit
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = 'bff448215230b564a1eb531f1c860a5af0b660d1bc55cd8ccb06a0ce1c0ea5e4dbc9656a8e55071456b758e889c98427e1e4ffc1beb593cd68cf79cb767a9ef7') LIMIT 1[0m
+Completed in 60ms (View: 43, DB: 2) | 200 OK [http://127.0.0.1/users/9/edit]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#update (for 127.0.0.1 at 2010-11-11 11:38:35) [PUT]
+  Parameters: {"commit"=>"Guardar cambios", "action"=>"update", "_method"=>"put", "authenticity_token"=>"gqj/+Iwz0GeCt40rObM/F3Ej6dKJEILY485piYT9lGo=", "id"=>"9", "controller"=>"users", "user"=>{"skype"=>"", "fechanacimiento(1i)"=>"", "created_at"=>"2010-11-11 15:23:44", "fechanacimiento(2i)"=>"10", "fechanacimiento"=>"1999-10-16", "fechanacimiento(3i)"=>"16", "idioma"=>"", "password_confirmation"=>"[FILTERED]", "role"=>"admin", "username"=>"prueba", "cargo"=>"", "ciudad"=>"", "pais"=>"", "sexo"=>"_", "nombreapellido"=>"", "status"=>"activo", "password"=>"[FILTERED]", "email"=>"prueba@gmail.com"}}
+  [4;35;1mUser Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 9) [0m
+WARNING: Can't mass-assign these protected attributes: created_at
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.6ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-11-11 15:38:35', `fechanacimiento` = '0001-10-16' WHERE `id` = 9[0m
+  [4;35;1mSQL (56.4ms)[0m   [0mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/
+Completed in 84ms (DB: 59) | 302 Found [http://127.0.0.1/users/9]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OasController#index (for 127.0.0.1 at 2010-11-11 11:38:35) [GET]
+  Parameters: {"action"=>"index", "controller"=>"oas"}
+  [4;36;1mOa Load (0.4ms)[0m   [0;1mSELECT * FROM `oas` [0m
+Rendering template within layouts/application
+Rendering oas/index
+  [4;35;1mOa Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `oas`[0m
+  [4;36;1mUser Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`persistence_token` = 'bff448215230b564a1eb531f1c860a5af0b660d1bc55cd8ccb06a0ce1c0ea5e4dbc9656a8e55071456b758e889c98427e1e4ffc1beb593cd68cf79cb767a9ef7') LIMIT 1[0m
+Completed in 58ms (View: 45, DB: 5) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-11-11 11:38:37) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;36;1mUser Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering users/index
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = 'bff448215230b564a1eb531f1c860a5af0b660d1bc55cd8ccb06a0ce1c0ea5e4dbc9656a8e55071456b758e889c98427e1e4ffc1beb593cd68cf79cb767a9ef7') LIMIT 1[0m
+Completed in 50ms (View: 34, DB: 3) | 200 OK [http://127.0.0.1/users]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-11-11 11:38:42) [GET]
+  Parameters: {"action"=>"edit", "id"=>"9", "controller"=>"users"}
+  [4;35;1mUser Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 9) [0m
+Rendering template within layouts/application
+Rendering users/edit
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`persistence_token` = 'bff448215230b564a1eb531f1c860a5af0b660d1bc55cd8ccb06a0ce1c0ea5e4dbc9656a8e55071456b758e889c98427e1e4ffc1beb593cd68cf79cb767a9ef7') LIMIT 1[0m
+Completed in 139ms (View: 124, DB: 3) | 200 OK [http://127.0.0.1/users/9/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OasController#index (for 127.0.0.1 at 2010-11-11 11:40:00) [GET]
+  Parameters: {"action"=>"index", "controller"=>"oas"}
+  [4;36;1mOa Load (0.6ms)[0m   [0;1mSELECT * FROM `oas` [0m
+Rendering template within layouts/application
+Rendering oas/index
+  [4;35;1mOa Columns (2.4ms)[0m   [0mSHOW FIELDS FROM `oas`[0m
+  [4;36;1mUser Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`persistence_token` = 'bff448215230b564a1eb531f1c860a5af0b660d1bc55cd8ccb06a0ce1c0ea5e4dbc9656a8e55071456b758e889c98427e1e4ffc1beb593cd68cf79cb767a9ef7') LIMIT 1[0m
+Completed in 60ms (View: 48, DB: 5) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#destroy (for 127.0.0.1 at 2010-11-11 11:43:29) [GET]
+  Parameters: {"action"=>"destroy", "controller"=>"user_sessions"}
+  [4;36;1mUser Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`persistence_token` = 'bff448215230b564a1eb531f1c860a5af0b660d1bc55cd8ccb06a0ce1c0ea5e4dbc9656a8e55071456b758e889c98427e1e4ffc1beb593cd68cf79cb767a9ef7') LIMIT 1[0m
+Redirected to http://127.0.0.1:3000/
+Completed in 24ms (DB: 2) | 302 Found [http://127.0.0.1/logout]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OasController#index (for 127.0.0.1 at 2010-11-11 11:43:29) [GET]
+  Parameters: {"action"=>"index", "controller"=>"oas"}
+  [4;36;1mOa Load (0.3ms)[0m   [0;1mSELECT * FROM `oas` [0m
+Rendering template within layouts/application
+Rendering oas/index
+  [4;35;1mOa Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `oas`[0m
+  [4;36;1mUser Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Completed in 53ms (View: 42, DB: 4) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-11-11 11:43:30) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+  [4;35;1mUser Columns (2.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_form (107.6ms)
+Completed in 127ms (View: 114, DB: 3) | 200 OK [http://127.0.0.1/users/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-11-11 11:43:50) [POST]
+  Parameters: {"commit"=>"Save changes", "action"=>"create", "authenticity_token"=>"gqj/+Iwz0GeCt40rObM/F3Ej6dKJEILY485piYT9lGo=", "controller"=>"users", "user"=>{"password_confirmation"=>"[FILTERED]", "role"=>"admin", "username"=>"unos", "password"=>"[FILTERED]", "email"=>"unos@gmail.com"}}
+  [4;36;1mUser Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'unos@gmail.com') LIMIT 1[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`username`) = BINARY 'unos') LIMIT 1[0m
+  [4;36;1mUser Load (0.9ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY 'c146386f4d7ac4e5864eaffb131965e876ece6bf09bc89fc3a7abba448f881354ea38069dfdc21b744d0c5be7754c1faf991f5c7bffc9b29914ac062f84ea4cc') LIMIT 1[0m
+  [4;35;1mUser Create (0.9ms)[0m   [0mINSERT INTO `users` (`skype`, `created_at`, `crypted_password`, `fechanacimiento`, `foto_file_size`, `updated_at`, `idioma`, `username`, `role`, `password_salt`, `ciudad`, `cargo`, `persistence_token`, `pais`, `foto_content_type`, `foto_file_name`, `status`, `nombreapellido`, `sexo`, `foto_updated_at`, `email`) VALUES(NULL, '2010-11-11 15:43:50', '40873ae49fa82b238012d35143a0c11236eb138d6451ae75b068d9e33feec1fb0c771a2bd03f9f5603e77709a9fac465ec79ec81134b747c158ffd60c0e1b27e', NULL, NULL, '2010-11-11 15:43:50', NULL, 'unos', 'admin', 'phLjo24xzbximEpic0R9', NULL, NULL, 'c146386f4d7ac4e5864eaffb131965e876ece6bf09bc89fc3a7abba448f881354ea38069dfdc21b744d0c5be7754c1faf991f5c7bffc9b29914ac062f84ea4cc', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'unos@gmail.com')[0m
+  [4;36;1mSQL (71.5ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/
+Completed in 116ms (DB: 77) | 302 Found [http://127.0.0.1/users]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OasController#index (for 127.0.0.1 at 2010-11-11 11:43:51) [GET]
+  Parameters: {"action"=>"index", "controller"=>"oas"}
+  [4;35;1mOa Load (0.4ms)[0m   [0mSELECT * FROM `oas` [0m
+Rendering template within layouts/application
+Rendering oas/index
+  [4;36;1mOa Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `oas`[0m
+  [4;35;1mUser Columns (3.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.8ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = 'c146386f4d7ac4e5864eaffb131965e876ece6bf09bc89fc3a7abba448f881354ea38069dfdc21b744d0c5be7754c1faf991f5c7bffc9b29914ac062f84ea4cc') LIMIT 1[0m
+Completed in 61ms (View: 47, DB: 6) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-11-11 11:43:52) [GET]
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;35;1mUser Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.7ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/application
+Rendering users/index
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`persistence_token` = 'c146386f4d7ac4e5864eaffb131965e876ece6bf09bc89fc3a7abba448f881354ea38069dfdc21b744d0c5be7754c1faf991f5c7bffc9b29914ac062f84ea4cc') LIMIT 1[0m
+Completed in 53ms (View: 37, DB: 3) | 200 OK [http://127.0.0.1/users]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-11-11 11:43:54) [GET]
+  Parameters: {"action"=>"edit", "id"=>"10", "controller"=>"users"}
+  [4;36;1mUser Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 10) [0m
+Rendering template within layouts/application
+Rendering users/edit
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = 'c146386f4d7ac4e5864eaffb131965e876ece6bf09bc89fc3a7abba448f881354ea38069dfdc21b744d0c5be7754c1faf991f5c7bffc9b29914ac062f84ea4cc') LIMIT 1[0m
+Completed in 50ms (View: 32, DB: 3) | 200 OK [http://127.0.0.1/users/10/edit]
+  [4;35;1mSQL (0.5ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (3.7ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#update (for 127.0.0.1 at 2010-11-11 11:44:38) [PUT]
+  Parameters: {"commit"=>"Guardar cambios", "action"=>"update", "_method"=>"put", "authenticity_token"=>"gqj/+Iwz0GeCt40rObM/F3Ej6dKJEILY485piYT9lGo=", "id"=>"10", "controller"=>"users", "user"=>{"skype"=>"", "fechanacimiento(1i)"=>"2005", "created_at"=>"2010-11-11 15:43:50", "fechanacimiento(2i)"=>"", "fechanacimiento"=>"", "fechanacimiento(3i)"=>"", "idioma"=>"", "password_confirmation"=>"[FILTERED]", "role"=>"admin", "username"=>"unos", "cargo"=>"", "ciudad"=>"", "pais"=>"", "sexo"=>"_", "nombreapellido"=>"", "status"=>"activo", "password"=>"[FILTERED]", "email"=>"unos@gmail.com"}}
+  [4;35;1mUser Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 10) [0m
+WARNING: Can't mass-assign these protected attributes: created_at
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Update (0.6ms)[0m   [0;1mUPDATE `users` SET `updated_at` = '2010-11-11 15:44:38', `fechanacimiento` = '2005-01-01', `sexo` = '_', `skype` = '', `idioma` = '', `nombreapellido` = '', `status` = 'activo', `cargo` = '', `pais` = '', `ciudad` = '' WHERE `id` = 10[0m
+  [4;35;1mSQL (49.6ms)[0m   [0mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/
+Completed in 77ms (DB: 57) | 302 Found [http://127.0.0.1/users/10]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OasController#index (for 127.0.0.1 at 2010-11-11 11:44:38) [GET]
+  Parameters: {"action"=>"index", "controller"=>"oas"}
+  [4;36;1mOa Load (0.3ms)[0m   [0;1mSELECT * FROM `oas` [0m
+Rendering template within layouts/application
+Rendering oas/index
+  [4;35;1mOa Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `oas`[0m
+  [4;36;1mUser Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`persistence_token` = 'c146386f4d7ac4e5864eaffb131965e876ece6bf09bc89fc3a7abba448f881354ea38069dfdc21b744d0c5be7754c1faf991f5c7bffc9b29914ac062f84ea4cc') LIMIT 1[0m
+Completed in 59ms (View: 47, DB: 4) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-11-11 11:44:40) [GET]
+  Parameters: {"action"=>"edit", "id"=>"10", "controller"=>"users"}
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 10) [0m
+Rendering template within layouts/application
+Rendering users/edit
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = 'c146386f4d7ac4e5864eaffb131965e876ece6bf09bc89fc3a7abba448f881354ea38069dfdc21b744d0c5be7754c1faf991f5c7bffc9b29914ac062f84ea4cc') LIMIT 1[0m
+Completed in 43ms (View: 28, DB: 3) | 200 OK [http://127.0.0.1/users/10/edit]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#update (for 127.0.0.1 at 2010-11-11 11:44:49) [PUT]
+  Parameters: {"commit"=>"Guardar cambios", "action"=>"update", "_method"=>"put", "authenticity_token"=>"gqj/+Iwz0GeCt40rObM/F3Ej6dKJEILY485piYT9lGo=", "id"=>"10", "controller"=>"users", "user"=>{"skype"=>"", "fechanacimiento(1i)"=>"2005", "created_at"=>"2010-11-11 15:43:50", "fechanacimiento(2i)"=>"", "fechanacimiento"=>"2005-01-01", "fechanacimiento(3i)"=>"1", "idioma"=>"", "password_confirmation"=>"[FILTERED]", "role"=>"admin", "username"=>"unos", "cargo"=>"", "ciudad"=>"", "pais"=>"", "sexo"=>"_", "nombreapellido"=>"", "status"=>"activo", "password"=>"[FILTERED]", "email"=>"unos@gmail.com"}}
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 10) [0m
+WARNING: Can't mass-assign these protected attributes: created_at
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/
+Completed in 23ms (DB: 3) | 302 Found [http://127.0.0.1/users/10]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OasController#index (for 127.0.0.1 at 2010-11-11 11:44:49) [GET]
+  Parameters: {"action"=>"index", "controller"=>"oas"}
+  [4;35;1mOa Load (0.3ms)[0m   [0mSELECT * FROM `oas` [0m
+Rendering template within layouts/application
+Rendering oas/index
+  [4;36;1mOa Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `oas`[0m
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = 'c146386f4d7ac4e5864eaffb131965e876ece6bf09bc89fc3a7abba448f881354ea38069dfdc21b744d0c5be7754c1faf991f5c7bffc9b29914ac062f84ea4cc') LIMIT 1[0m
+Completed in 54ms (View: 43, DB: 4) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-11-11 11:44:50) [GET]
+  Parameters: {"action"=>"edit", "id"=>"10", "controller"=>"users"}
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 10) [0m
+Rendering template within layouts/application
+Rendering users/edit
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`persistence_token` = 'c146386f4d7ac4e5864eaffb131965e876ece6bf09bc89fc3a7abba448f881354ea38069dfdc21b744d0c5be7754c1faf991f5c7bffc9b29914ac062f84ea4cc') LIMIT 1[0m
+Completed in 43ms (View: 30, DB: 2) | 200 OK [http://127.0.0.1/users/10/edit]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-11-11 11:45:58) [GET]
+  Parameters: {"action"=>"edit", "id"=>"10", "controller"=>"users"}
+  [4;36;1mUser Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 10) [0m
+Rendering template within layouts/application
+Rendering users/edit
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = 'c146386f4d7ac4e5864eaffb131965e876ece6bf09bc89fc3a7abba448f881354ea38069dfdc21b744d0c5be7754c1faf991f5c7bffc9b29914ac062f84ea4cc') LIMIT 1[0m
+Completed in 165ms (View: 147, DB: 3) | 200 OK [http://127.0.0.1/users/10/edit]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-11-11 11:47:17) [GET]
+  Parameters: {"action"=>"edit", "id"=>"10", "controller"=>"users"}
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 10) [0m
+Rendering template within layouts/application
+Rendering users/edit
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`persistence_token` = 'c146386f4d7ac4e5864eaffb131965e876ece6bf09bc89fc3a7abba448f881354ea38069dfdc21b744d0c5be7754c1faf991f5c7bffc9b29914ac062f84ea4cc') LIMIT 1[0m
+Completed in 57ms (View: 40, DB: 2) | 200 OK [http://127.0.0.1/users/10/edit]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-11-11 11:48:04) [GET]
+  Parameters: {"action"=>"edit", "id"=>"10", "controller"=>"users"}
+  [4;36;1mUser Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 10) [0m
+Rendering template within layouts/application
+Rendering users/edit
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = 'c146386f4d7ac4e5864eaffb131965e876ece6bf09bc89fc3a7abba448f881354ea38069dfdc21b744d0c5be7754c1faf991f5c7bffc9b29914ac062f84ea4cc') LIMIT 1[0m
+Completed in 69ms (View: 54, DB: 2) | 200 OK [http://127.0.0.1/users/10/edit]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#update (for 127.0.0.1 at 2010-11-11 11:48:09) [PUT]
+  Parameters: {"commit"=>"Guardar cambios", "action"=>"update", "_method"=>"put", "authenticity_token"=>"gqj/+Iwz0GeCt40rObM/F3Ej6dKJEILY485piYT9lGo=", "id"=>"10", "controller"=>"users", "user"=>{"skype"=>"", "fechanacimiento(1i)"=>"2005", "created_at"=>"2010-11-11 15:43:50", "fechanacimiento(2i)"=>"1", "fechanacimiento"=>"2005-01-01", "fechanacimiento(3i)"=>"1", "idioma"=>"", "password_confirmation"=>"[FILTERED]", "role"=>"admin", "username"=>"unos", "cargo"=>"", "ciudad"=>"", "pais"=>"", "sexo"=>"_", "nombreapellido"=>"", "status"=>"activo", "password"=>"[FILTERED]", "email"=>"unos@gmail.com"}}
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 10) [0m
+WARNING: Can't mass-assign these protected attributes: created_at
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/
+Completed in 26ms (DB: 3) | 302 Found [http://127.0.0.1/users/10]
+  [4;35;1mSQL (0.4ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OasController#index (for 127.0.0.1 at 2010-11-11 11:48:09) [GET]
+  Parameters: {"action"=>"index", "controller"=>"oas"}
+  [4;35;1mOa Load (0.3ms)[0m   [0mSELECT * FROM `oas` [0m
+Rendering template within layouts/application
+Rendering oas/index
+  [4;36;1mOa Columns (2.5ms)[0m   [0;1mSHOW FIELDS FROM `oas`[0m
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = 'c146386f4d7ac4e5864eaffb131965e876ece6bf09bc89fc3a7abba448f881354ea38069dfdc21b744d0c5be7754c1faf991f5c7bffc9b29914ac062f84ea4cc') LIMIT 1[0m
+Completed in 69ms (View: 51, DB: 5) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-11-11 11:48:10) [GET]
+  Parameters: {"action"=>"edit", "id"=>"10", "controller"=>"users"}
+  [4;35;1mUser Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 10) [0m
+Rendering template within layouts/application
+Rendering users/edit
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`persistence_token` = 'c146386f4d7ac4e5864eaffb131965e876ece6bf09bc89fc3a7abba448f881354ea38069dfdc21b744d0c5be7754c1faf991f5c7bffc9b29914ac062f84ea4cc') LIMIT 1[0m
+Completed in 46ms (View: 29, DB: 2) | 200 OK [http://127.0.0.1/users/10/edit]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (2.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-11-11 11:49:07) [GET]
+  Parameters: {"action"=>"edit", "id"=>"10", "controller"=>"users"}
+  [4;36;1mUser Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 10) [0m
+Rendering template within layouts/application
+Rendering users/edit
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = 'c146386f4d7ac4e5864eaffb131965e876ece6bf09bc89fc3a7abba448f881354ea38069dfdc21b744d0c5be7754c1faf991f5c7bffc9b29914ac062f84ea4cc') LIMIT 1[0m
+Completed in 51ms (View: 37, DB: 4) | 200 OK [http://127.0.0.1/users/10/edit]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UserSessionsController#destroy (for 127.0.0.1 at 2010-11-11 11:49:12) [GET]
+  Parameters: {"action"=>"destroy", "controller"=>"user_sessions"}
+  [4;35;1mUser Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = 'c146386f4d7ac4e5864eaffb131965e876ece6bf09bc89fc3a7abba448f881354ea38069dfdc21b744d0c5be7754c1faf991f5c7bffc9b29914ac062f84ea4cc') LIMIT 1[0m
+Redirected to http://127.0.0.1:3000/
+Completed in 34ms (DB: 2) | 302 Found [http://127.0.0.1/logout]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OasController#index (for 127.0.0.1 at 2010-11-11 11:49:12) [GET]
+  Parameters: {"action"=>"index", "controller"=>"oas"}
+  [4;35;1mOa Load (0.3ms)[0m   [0mSELECT * FROM `oas` [0m
+Rendering template within layouts/application
+Rendering oas/index
+  [4;36;1mOa Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `oas`[0m
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Completed in 48ms (View: 38, DB: 3) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-11-11 11:49:15) [GET]
+  Parameters: {"action"=>"new", "controller"=>"users"}
+  [4;36;1mUser Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered users/_form (9.3ms)
+Completed in 28ms (View: 15, DB: 2) | 200 OK [http://127.0.0.1/users/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-11-11 11:49:30) [POST]
+  Parameters: {"commit"=>"Save changes", "action"=>"create", "authenticity_token"=>"gqj/+Iwz0GeCt40rObM/F3Ej6dKJEILY485piYT9lGo=", "controller"=>"users", "user"=>{"password_confirmation"=>"[FILTERED]", "role"=>"admin", "username"=>"doss", "password"=>"[FILTERED]", "email"=>"doss@gmail.com"}}
+  [4;35;1mUser Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.7ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`email`) = BINARY 'doss@gmail.com') LIMIT 1[0m
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (LOWER(`users`.`username`) = BINARY 'doss') LIMIT 1[0m
+  [4;35;1mUser Load (0.9ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`persistence_token` = BINARY 'a29972bf90218302838db1dc1f47cf3957a15910d643b88f0dfa45f0becc29a0ed7897fcff8c050039a242aa5cf859bebfe8a379f9bbe1d5df01fc71bafe4044') LIMIT 1[0m
+  [4;36;1mUser Create (0.6ms)[0m   [0;1mINSERT INTO `users` (`skype`, `created_at`, `crypted_password`, `fechanacimiento`, `foto_file_size`, `updated_at`, `idioma`, `username`, `role`, `password_salt`, `ciudad`, `cargo`, `persistence_token`, `pais`, `foto_content_type`, `foto_file_name`, `status`, `nombreapellido`, `sexo`, `foto_updated_at`, `email`) VALUES(NULL, '2010-11-11 15:49:30', '638ef2b5f5019e840012f110a393684fa57cd1187d5d4596c81ed93b633d9c38ba9e21297e8cffd27d3870cdc428936c362e0da1e7cb095f69a7b1bb04bfdaf7', NULL, NULL, '2010-11-11 15:49:30', NULL, 'doss', 'admin', 'KXEOgPxA00kgOvwDaxt', NULL, NULL, 'a29972bf90218302838db1dc1f47cf3957a15910d643b88f0dfa45f0becc29a0ed7897fcff8c050039a242aa5cf859bebfe8a379f9bbe1d5df01fc71bafe4044', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'doss@gmail.com')[0m
+  [4;35;1mSQL (47.3ms)[0m   [0mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/
+Completed in 87ms (DB: 53) | 302 Found [http://127.0.0.1/users]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OasController#index (for 127.0.0.1 at 2010-11-11 11:49:30) [GET]
+  Parameters: {"action"=>"index", "controller"=>"oas"}
+  [4;36;1mOa Load (0.3ms)[0m   [0;1mSELECT * FROM `oas` [0m
+Rendering template within layouts/application
+Rendering oas/index
+  [4;35;1mOa Columns (2.9ms)[0m   [0mSHOW FIELDS FROM `oas`[0m
+  [4;36;1mUser Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.9ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`persistence_token` = 'a29972bf90218302838db1dc1f47cf3957a15910d643b88f0dfa45f0becc29a0ed7897fcff8c050039a242aa5cf859bebfe8a379f9bbe1d5df01fc71bafe4044') LIMIT 1[0m
+Completed in 164ms (View: 151, DB: 6) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-11-11 11:49:31) [GET]
+  Parameters: {"action"=>"edit", "id"=>"11", "controller"=>"users"}
+  [4;36;1mUser Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.8ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 11) [0m
+Rendering template within layouts/application
+Rendering users/edit
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = 'a29972bf90218302838db1dc1f47cf3957a15910d643b88f0dfa45f0becc29a0ed7897fcff8c050039a242aa5cf859bebfe8a379f9bbe1d5df01fc71bafe4044') LIMIT 1[0m
+Completed in 46ms (View: 31, DB: 3) | 200 OK [http://127.0.0.1/users/11/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-11-11 11:54:16) [GET]
+  Parameters: {"action"=>"edit", "id"=>"11", "controller"=>"users"}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 11) [0m
+Rendering template within layouts/application
+Rendering users/edit
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`persistence_token` = 'a29972bf90218302838db1dc1f47cf3957a15910d643b88f0dfa45f0becc29a0ed7897fcff8c050039a242aa5cf859bebfe8a379f9bbe1d5df01fc71bafe4044') LIMIT 1[0m
+Completed in 49ms (View: 35, DB: 2) | 200 OK [http://127.0.0.1/users/11/edit]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#update (for 127.0.0.1 at 2010-11-11 11:54:26) [PUT]
+  Parameters: {"commit"=>"Guardar cambios", "action"=>"update", "_method"=>"put", "authenticity_token"=>"gqj/+Iwz0GeCt40rObM/F3Ej6dKJEILY485piYT9lGo=", "id"=>"11", "controller"=>"users", "user"=>{"skype"=>"", "fechanacimiento(1i)"=>"", "created_at"=>"2010-11-11 15:49:30", "fechanacimiento(2i)"=>"1", "fechanacimiento"=>"", "fechanacimiento(3i)"=>"7", "idioma"=>"", "password_confirmation"=>"[FILTERED]", "role"=>"admin", "username"=>"doss", "cargo"=>"", "ciudad"=>"", "pais"=>"", "sexo"=>"_", "nombreapellido"=>"", "status"=>"activo", "password"=>"[FILTERED]", "email"=>"doss@gmail.com"}}
+  [4;36;1mUser Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 11) [0m
+WARNING: Can't mass-assign these protected attributes: created_at
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (0.6ms)[0m   [0mUPDATE `users` SET `updated_at` = '2010-11-11 15:54:26', `fechanacimiento` = '0001-01-07', `sexo` = '_', `skype` = '', `idioma` = '', `nombreapellido` = '', `status` = 'activo', `cargo` = '', `pais` = '', `ciudad` = '' WHERE `id` = 11[0m
+  [4;36;1mSQL (57.2ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/
+Completed in 85ms (DB: 60) | 302 Found [http://127.0.0.1/users/11]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OasController#index (for 127.0.0.1 at 2010-11-11 11:54:26) [GET]
+  Parameters: {"action"=>"index", "controller"=>"oas"}
+  [4;35;1mOa Load (0.3ms)[0m   [0mSELECT * FROM `oas` [0m
+Rendering template within layouts/application
+Rendering oas/index
+  [4;36;1mOa Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `oas`[0m
+  [4;35;1mUser Columns (2.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.1ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = 'a29972bf90218302838db1dc1f47cf3957a15910d643b88f0dfa45f0becc29a0ed7897fcff8c050039a242aa5cf859bebfe8a379f9bbe1d5df01fc71bafe4044') LIMIT 1[0m
+Completed in 60ms (View: 47, DB: 6) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-11-11 11:54:28) [GET]
+  Parameters: {"action"=>"edit", "id"=>"11", "controller"=>"users"}
+  [4;35;1mUser Columns (3.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (1.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 11) [0m
+Rendering template within layouts/application
+Rendering users/edit
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`persistence_token` = 'a29972bf90218302838db1dc1f47cf3957a15910d643b88f0dfa45f0becc29a0ed7897fcff8c050039a242aa5cf859bebfe8a379f9bbe1d5df01fc71bafe4044') LIMIT 1[0m
+Completed in 47ms (View: 28, DB: 6) | 200 OK [http://127.0.0.1/users/11/edit]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-11-11 11:56:08) [GET]
+  Parameters: {"action"=>"edit", "id"=>"11", "controller"=>"users"}
+  [4;36;1mUser Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 11) [0m
+Rendering template within layouts/application
+Rendering users/edit
+ERROR: compiling _run_erb_app47views47users47edit46html46erb RAISED compile error
+/home/juanca/rails/ROA2/app/views/users/edit.html.erb:66: syntax error, unexpected '<', expecting ')'
+  </p>
+   ^
+/home/juanca/rails/ROA2/app/views/users/edit.html.erb:68: unmatched ): /p>
+  <p>
+    <%= f.label :Cargo ).to_s); @output_buffer.concat "<br /
+/home/juanca/rails/ROA2/app/views/users/edit.html.erb:68: syntax error, unexpected $undefined
+    <%= f.label :Cargo ).to_s); @output_buffer.concat "<br />\n    "
+                                                              ^
+/home/juanca/rails/ROA2/app/views/users/edit.html.erb:69: syntax error, unexpected $undefined, expecting ')'
+...o_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+                              ^
+/home/juanca/rails/ROA2/app/views/users/edit.html.erb:72: syntax error, unexpected $undefined
+...@output_buffer.concat "<br />\n    "
+                              ^
+/home/juanca/rails/ROA2/app/views/users/edit.html.erb:73: syntax error, unexpected $undefined, expecting ')'
+...o_s); @output_buffer.concat "\n  </p>\n  \n  <p>\n    "
+                              ^
+/home/juanca/rails/ROA2/app/views/users/edit.html.erb:77: syntax error, unexpected $undefined
+...@output_buffer.concat "<br />\n    "
+                              ^
+/home/juanca/rails/ROA2/app/views/users/edit.html.erb:78: syntax error, unexpected $undefined, expecting ')'
+...o_s); @output_buffer.concat "\n  </p>\n  <p>"
+                              ^
+/home/juanca/rails/ROA2/app/views/users/edit.html.erb:80: unknown regexp option - p
+/home/juanca/rails/ROA2/app/views/users/edit.html.erb:80: syntax error, unexpected $undefined
+...; @output_buffer.concat "</p>\n"
+                              ^
+/home/juanca/rails/ROA2/app/views/users/edit.html.erb:81: syntax error, unexpected $undefined, expecting ')'
+;  end ; @output_buffer.concat "\n"
+                                 ^
+/home/juanca/rails/ROA2/app/views/users/edit.html.erb:81: unterminated string meets end of file
+/home/juanca/rails/ROA2/app/views/users/edit.html.erb:81: syntax error, unexpected $end, expecting ')'
+Function body:           def _run_erb_app47views47users47edit46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ;  title "Actualización de datos de Usuario" ; @output_buffer.concat "\nchingao!!\n"
+
+; @output_buffer.concat "\n\n"
+
+;  form_for @user do |f| ; @output_buffer.concat "\n  "
+; @output_buffer.concat(( f.error_messages ).to_s); @output_buffer.concat "\n  <p>\n    "
+
+; @output_buffer.concat(( f.label :Foto ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.file_field :foto_file_name ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :"Nombre de usuario" ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :username ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :"e-mail" ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :email ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :Contraseña ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.password_field :password ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :"Confirmación de contraseña" ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.password_field :password_confirmation ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :Rol ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat "\n    "
+; @output_buffer.concat(( f.collection_select :role, User::ROLES, :to_s, :humanize ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :Estado ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.collection_select :status, User::ESTADO, :to_s, :humanize ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :"Nombre y Apellido").to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :nombreapellido).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :Pais ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :pais ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :Ciudad ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :ciudad ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :Idioma ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :idioma ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :Sexo ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.collection_select :sexo, User::SEXO, :to_s, :humanize ).to_s); @output_buffer.concat "\n \n  </p>\n  <p>\n    "
+
+
+
+; @output_buffer.concat(( f.label :"Fecha de nacimiento" ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :fechanacimiento ).to_s); @output_buffer.concat "\n    "
+; @output_buffer.concat(( date_select('user', 'fechanacimiento', :order => [:day,:month,:year],
+                                               :start_year => Time.now.year-5,
+                                               :end_year => Time.now.year-70,
+                                               :use_month_names => %w(_ enero febrero marzo abril mayo junio julio agosto septiembre octubre noviembre diciembre mayo),
+                                               :prompt => { :day => 'día', :month => 'mes', :year => 'año' }
+                                               )
+  </p>
+  <p>
+    <%= f.label :Cargo ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :cargo ).to_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+
+
+; @output_buffer.concat(( f.label :"Dirección de Skype" ).to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :skype ).to_s); @output_buffer.concat "\n  </p>\n  \n  <p>\n    "
+
+
+
+; @output_buffer.concat(( f.label :"Fecha y Hora  de creación").to_s); @output_buffer.concat "<br />\n    "
+; @output_buffer.concat(( f.text_field :created_at ).to_s); @output_buffer.concat "\n  </p>\n  <p>"
+
+; @output_buffer.concat(( f.submit "Guardar cambios" ).to_s); @output_buffer.concat "</p>\n"
+;  end ; @output_buffer.concat "\n"
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /home/juanca/rails/ROA2/app/views/users/edit.html.erb:81:in `compile!'
+/opt/ruby-enterprise-1.8.7-2010.02/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/renderable.rb:61:in `compile'
+/opt/ruby-enterprise-1.8.7-2010.02/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/renderable.rb:28:in `render'
+/opt/ruby-enterprise-1.8.7-2010.02/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/template.rb:205:in `render_template'
+/opt/ruby-enterprise-1.8.7-2010.02/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:265:in `render'
+/opt/ruby-enterprise-1.8.7-2010.02/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:348:in `_render_with_layout'
+/opt/ruby-enterprise-1.8.7-2010.02/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_view/base.rb:262:in `render'
+/opt/ruby-enterprise-1.8.7-2010.02/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1250:in `render_for_file'
+/opt/ruby-enterprise-1.8.7-2010.02/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:936:in `render_without_benchmark'
+/opt/ruby-enterprise-1.8.7-2010.02/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+/opt/ruby-enterprise-1.8.7-2010.02/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/ruby-enterprise-1.8.7-2010.02/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/opt/ruby-enterprise-1.8.7-2010.02/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/ruby-enterprise-1.8.7-2010.02/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:51:in `render'
+/opt/ruby-enterprise-1.8.7-2010.02/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1326:in `default_render'
+/opt/ruby-enterprise-1.8.7-2010.02/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+/opt/ruby-enterprise-1.8.7-2010.02/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:617:in `call_filters'
+/opt/ruby-enterprise-1.8.7-2010.02/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/opt/ruby-enterprise-1.8.7-2010.02/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/opt/ruby-enterprise-1.8.7-2010.02/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/ruby-enterprise-1.8.7-2010.02/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/opt/ruby-enterprise-1.8.7-2010.02/lib/ruby/gems/1.8/gems/activesupport-2.3.8/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/opt/ruby-enterprise-1.8.7-2010.02/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/opt/ruby-enterprise-1.8.7-2010.02/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/opt/ruby-enterprise-1.8.7-2010.02/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/flash.rb:151:in `perform_action'
+/opt/ruby-enterprise-1.8.7-2010.02/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `send'
+/opt/ruby-enterprise-1.8.7-2010.02/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:532:in `process_without_filters'
+/opt/ruby-enterprise-1.8.7-2010.02/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/filters.rb:606:in `process'
+/opt/ruby-enterprise-1.8.7-2010.02/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:391:in `process'
+/opt/ruby-enterprise-1.8.7-2010.02/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/base.rb:386:in `call'
+/opt/ruby-enterprise-1.8.7-2010.02/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/routing/route_set.rb:438:in `call'
+/opt/ruby-enterprise-1.8.7-2010.02/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/opt/ruby-enterprise-1.8.7-2010.02/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:121:in `_call'
+/opt/ruby-enterprise-1.8.7-2010.02/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/opt/ruby-enterprise-1.8.7-2010.02/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+/opt/ruby-enterprise-1.8.7-2010.02/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:29:in `call'
+/opt/ruby-enterprise-1.8.7-2010.02/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/opt/ruby-enterprise-1.8.7-2010.02/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:9:in `cache'
+/opt/ruby-enterprise-1.8.7-2010.02/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/query_cache.rb:28:in `call'
+/opt/ruby-enterprise-1.8.7-2010.02/lib/ruby/gems/1.8/gems/activerecord-2.3.8/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/opt/ruby-enterprise-1.8.7-2010.02/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/string_coercion.rb:25:in `call'
+/opt/ruby-enterprise-1.8.7-2010.02/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+/opt/ruby-enterprise-1.8.7-2010.02/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+/opt/ruby-enterprise-1.8.7-2010.02/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/params_parser.rb:15:in `call'
+/opt/ruby-enterprise-1.8.7-2010.02/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/session/cookie_store.rb:99:in `call'
+/opt/ruby-enterprise-1.8.7-2010.02/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/failsafe.rb:26:in `call'
+/opt/ruby-enterprise-1.8.7-2010.02/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+/opt/ruby-enterprise-1.8.7-2010.02/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+/opt/ruby-enterprise-1.8.7-2010.02/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+/opt/ruby-enterprise-1.8.7-2010.02/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:114:in `call'
+/opt/ruby-enterprise-1.8.7-2010.02/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/reloader.rb:34:in `run'
+/opt/ruby-enterprise-1.8.7-2010.02/lib/ruby/gems/1.8/gems/actionpack-2.3.8/lib/action_controller/dispatcher.rb:108:in `call'
+/opt/ruby-enterprise-1.8.7-2010.02/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/rails/rack/static.rb:31:in `call'
+/opt/ruby-enterprise-1.8.7-2010.02/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+/opt/ruby-enterprise-1.8.7-2010.02/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+/opt/ruby-enterprise-1.8.7-2010.02/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+/opt/ruby-enterprise-1.8.7-2010.02/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/rails/rack/log_tailer.rb:17:in `call'
+/opt/ruby-enterprise-1.8.7-2010.02/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+/opt/ruby-enterprise-1.8.7-2010.02/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/chunked.rb:15:in `call'
+/opt/ruby-enterprise-1.8.7-2010.02/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/handler/mongrel.rb:67:in `process'
+/opt/ruby-enterprise-1.8.7-2010.02/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/opt/ruby-enterprise-1.8.7-2010.02/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/opt/ruby-enterprise-1.8.7-2010.02/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/opt/ruby-enterprise-1.8.7-2010.02/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/opt/ruby-enterprise-1.8.7-2010.02/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/opt/ruby-enterprise-1.8.7-2010.02/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/opt/ruby-enterprise-1.8.7-2010.02/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/opt/ruby-enterprise-1.8.7-2010.02/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/opt/ruby-enterprise-1.8.7-2010.02/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/opt/ruby-enterprise-1.8.7-2010.02/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/opt/ruby-enterprise-1.8.7-2010.02/lib/ruby/gems/1.8/gems/rack-1.1.0/lib/rack/handler/mongrel.rb:38:in `run'
+/opt/ruby-enterprise-1.8.7-2010.02/lib/ruby/gems/1.8/gems/rails-2.3.8/lib/commands/server.rb:111
+/opt/ruby-enterprise-1.8.7-2010.02/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/opt/ruby-enterprise-1.8.7-2010.02/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/home/juanca/rails/ROA2/app/views/users/edit.html.erb:66: syntax error, unexpected '<', expecting ')'
+  </p>
+   ^
+/home/juanca/rails/ROA2/app/views/users/edit.html.erb:68: unmatched ): /p>
+  <p>
+    <%= f.label :Cargo ).to_s); @output_buffer.concat "<br /
+/home/juanca/rails/ROA2/app/views/users/edit.html.erb:68: syntax error, unexpected $undefined
+    <%= f.label :Cargo ).to_s); @output_buffer.concat "<br />\n    "
+                                                              ^
+/home/juanca/rails/ROA2/app/views/users/edit.html.erb:69: syntax error, unexpected $undefined, expecting ')'
+...o_s); @output_buffer.concat "\n  </p>\n  <p>\n    "
+                              ^
+/home/juanca/rails/ROA2/app/views/users/edit.html.erb:72: syntax error, unexpected $undefined
+...@output_buffer.concat "<br />\n    "
+                              ^
+/home/juanca/rails/ROA2/app/views/users/edit.html.erb:73: syntax error, unexpected $undefined, expecting ')'
+...o_s); @output_buffer.concat "\n  </p>\n  \n  <p>\n    "
+                              ^
+/home/juanca/rails/ROA2/app/views/users/edit.html.erb:77: syntax error, unexpected $undefined
+...@output_buffer.concat "<br />\n    "
+                              ^
+/home/juanca/rails/ROA2/app/views/users/edit.html.erb:78: syntax error, unexpected $undefined, expecting ')'
+...o_s); @output_buffer.concat "\n  </p>\n  <p>"
+                              ^
+/home/juanca/rails/ROA2/app/views/users/edit.html.erb:80: unknown regexp option - p
+/home/juanca/rails/ROA2/app/views/users/edit.html.erb:80: syntax error, unexpected $undefined
+...; @output_buffer.concat "</p>\n"
+                              ^
+/home/juanca/rails/ROA2/app/views/users/edit.html.erb:81: syntax error, unexpected $undefined, expecting ')'
+;  end ; @output_buffer.concat "\n"
+                                 ^
+/home/juanca/rails/ROA2/app/views/users/edit.html.erb:81: unterminated string meets end of file
+/home/juanca/rails/ROA2/app/views/users/edit.html.erb:81: syntax error, unexpected $end, expecting ')') on line #66 of app/views/users/edit.html.erb:
+63:                                                :use_month_names => %w(_ enero febrero marzo abril mayo junio julio agosto septiembre octubre noviembre diciembre mayo),
+64:                                                :prompt => { :day => 'día', :month => 'mes', :year => 'año' }
+65:                                                )
+66:   </p>
+67:   <p>
+68:     <%= f.label :Cargo %><br />
+69:     <%= f.text_field :cargo %>
+
+    app/views/users/edit.html.erb:81:in `compile!'
+
+Rendered rescues/_trace (163.8ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-11-11 11:56:56) [GET]
+  Parameters: {"action"=>"edit", "id"=>"11", "controller"=>"users"}
+  [4;36;1mUser Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 11) [0m
+Rendering template within layouts/application
+Rendering users/edit
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = 'a29972bf90218302838db1dc1f47cf3957a15910d643b88f0dfa45f0becc29a0ed7897fcff8c050039a242aa5cf859bebfe8a379f9bbe1d5df01fc71bafe4044') LIMIT 1[0m
+Completed in 56ms (View: 41, DB: 3) | 200 OK [http://127.0.0.1/users/11/edit]
+  [4;35;1mSQL (0.5ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-11-11 11:57:24) [GET]
+  Parameters: {"action"=>"edit", "id"=>"11", "controller"=>"users"}
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 11) [0m
+Rendering template within layouts/application
+Rendering users/edit
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`persistence_token` = 'a29972bf90218302838db1dc1f47cf3957a15910d643b88f0dfa45f0becc29a0ed7897fcff8c050039a242aa5cf859bebfe8a379f9bbe1d5df01fc71bafe4044') LIMIT 1[0m
+Completed in 53ms (View: 38, DB: 4) | 200 OK [http://127.0.0.1/users/11/edit]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-11-11 11:58:58) [GET]
+  Parameters: {"action"=>"edit", "id"=>"11", "controller"=>"users"}
+  [4;36;1mUser Columns (2.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 11) [0m
+Rendering template within layouts/application
+Rendering users/edit
+
+ActionView::TemplateError (undefined local variable or method `user' for #<ActionView::Base:0xb1f907c>) on line #77 of app/views/users/edit.html.erb:
+74:   
+75:   <p>
+76:     <%= f.label :"Fecha y Hora  de creación"%><br />
+77:     <td><%=h user.created_at %></td>
+78:     
+79:   </p>
+80:   <p><%= f.submit "Guardar cambios" %></p>
+
+    app/views/users/edit.html.erb:77
+    app/views/users/edit.html.erb:5
+
+Rendered rescues/_trace (61.3ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-11-11 11:59:17) [GET]
+  Parameters: {"action"=>"edit", "id"=>"11", "controller"=>"users"}
+  [4;36;1mUser Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 11) [0m
+Rendering template within layouts/application
+Rendering users/edit
+
+ActionView::TemplateError (undefined local variable or method `user' for #<ActionView::Base:0xb258d24>) on line #77 of app/views/users/edit.html.erb:
+74:   
+75:   <p>
+76:     <%= f.label :"Fecha y Hora  de creación"%><br />
+77:     <%=h user.created_at %>
+78:     
+79:   </p>
+80:   <p><%= f.submit "Guardar cambios" %></p>
+
+    app/views/users/edit.html.erb:77
+    app/views/users/edit.html.erb:5
+
+Rendered rescues/_trace (60.3ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-11-11 11:59:34) [GET]
+  Parameters: {"action"=>"edit", "id"=>"11", "controller"=>"users"}
+  [4;36;1mUser Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 11) [0m
+Rendering template within layouts/application
+Rendering users/edit
+
+ActionView::TemplateError (undefined local variable or method `created_at' for #<ActionView::Base:0xb2ff390>) on line #77 of app/views/users/edit.html.erb:
+74:   
+75:   <p>
+76:     <%= f.label :"Fecha y Hora  de creación"%><br />
+77:     <%=h created_at %>
+78:     
+79:   </p>
+80:   <p><%= f.submit "Guardar cambios" %></p>
+
+    app/views/users/edit.html.erb:77
+    app/views/users/edit.html.erb:5
+
+Rendered rescues/_trace (188.1ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-11-11 11:59:35) [GET]
+  Parameters: {"action"=>"edit", "id"=>"11", "controller"=>"users"}
+  [4;36;1mUser Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 11) [0m
+Rendering template within layouts/application
+Rendering users/edit
+
+ActionView::TemplateError (undefined local variable or method `created_at' for #<ActionView::Base:0xb38920c>) on line #77 of app/views/users/edit.html.erb:
+74:   
+75:   <p>
+76:     <%= f.label :"Fecha y Hora  de creación"%><br />
+77:     <%=h created_at %>
+78:     
+79:   </p>
+80:   <p><%= f.submit "Guardar cambios" %></p>
+
+    app/views/users/edit.html.erb:77
+    app/views/users/edit.html.erb:5
+
+Rendered rescues/_trace (68.4ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-11-11 11:59:35) [GET]
+  Parameters: {"action"=>"edit", "id"=>"11", "controller"=>"users"}
+  [4;36;1mUser Columns (1.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 11) [0m
+Rendering template within layouts/application
+Rendering users/edit
+
+ActionView::TemplateError (undefined local variable or method `created_at' for #<ActionView::Base:0xb4044fc>) on line #77 of app/views/users/edit.html.erb:
+74:   
+75:   <p>
+76:     <%= f.label :"Fecha y Hora  de creación"%><br />
+77:     <%=h created_at %>
+78:     
+79:   </p>
+80:   <p><%= f.submit "Guardar cambios" %></p>
+
+    app/views/users/edit.html.erb:77
+    app/views/users/edit.html.erb:5
+
+Rendered rescues/_trace (57.4ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-11-11 12:00:04) [GET]
+  Parameters: {"action"=>"edit", "id"=>"11", "controller"=>"users"}
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 11) [0m
+Rendering template within layouts/application
+Rendering users/edit
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = 'a29972bf90218302838db1dc1f47cf3957a15910d643b88f0dfa45f0becc29a0ed7897fcff8c050039a242aa5cf859bebfe8a379f9bbe1d5df01fc71bafe4044') LIMIT 1[0m
+Completed in 50ms (View: 36, DB: 2) | 200 OK [http://127.0.0.1/users/11/edit]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-11-11 12:01:40) [GET]
+  Parameters: {"action"=>"edit", "id"=>"11", "controller"=>"users"}
+  [4;35;1mUser Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 11) [0m
+Rendering template within layouts/application
+Rendering users/edit
+
+ActionView::TemplateError (undefined method `datetime' for #<ActionView::Helpers::FormBuilder:0xb3be8a8>) on line #77 of app/views/users/edit.html.erb:
+74:   
+75:   <p>
+76:     <%= f.label :"Fecha y Hora  de creación"%><br />
+77:     <%=h f.datetime :created_at %>
+78:     
+79:   </p>
+80:   <p><%= f.submit "Guardar cambios" %></p>
+
+    app/views/users/edit.html.erb:77
+    app/views/users/edit.html.erb:5
+
+Rendered rescues/_trace (56.8ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-11-11 12:01:52) [GET]
+  Parameters: {"action"=>"edit", "id"=>"11", "controller"=>"users"}
+  [4;35;1mUser Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 11) [0m
+Rendering template within layouts/application
+Rendering users/edit
+
+ActionView::TemplateError (undefined method `date_time' for #<ActionView::Helpers::FormBuilder:0xb1f8e9c>) on line #77 of app/views/users/edit.html.erb:
+74:   
+75:   <p>
+76:     <%= f.label :"Fecha y Hora  de creación"%><br />
+77:     <%=h f.date_time :created_at %>
+78:     
+79:   </p>
+80:   <p><%= f.submit "Guardar cambios" %></p>
+
+    app/views/users/edit.html.erb:77
+    app/views/users/edit.html.erb:5
+
+Rendered rescues/_trace (59.5ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.4ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-11-11 12:02:15) [GET]
+  Parameters: {"action"=>"edit", "id"=>"11", "controller"=>"users"}
+  [4;35;1mUser Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 11) [0m
+Rendering template within layouts/application
+Rendering users/edit
+
+ActionView::TemplateError (undefined method `datetime_field' for #<ActionView::Helpers::FormBuilder:0xb29173c>) on line #77 of app/views/users/edit.html.erb:
+74:   
+75:   <p>
+76:     <%= f.label :"Fecha y Hora  de creación"%><br />
+77:     <%=h f.datetime_field :created_at %>
+78:     
+79:   </p>
+80:   <p><%= f.submit "Guardar cambios" %></p>
+
+    app/views/users/edit.html.erb:77
+    app/views/users/edit.html.erb:5
+
+Rendered rescues/_trace (167.6ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-11-11 12:02:24) [GET]
+  Parameters: {"action"=>"edit", "id"=>"11", "controller"=>"users"}
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 11) [0m
+Rendering template within layouts/application
+Rendering users/edit
+
+ActionView::TemplateError (undefined method `date_field' for #<ActionView::Helpers::FormBuilder:0xb315f00>) on line #77 of app/views/users/edit.html.erb:
+74:   
+75:   <p>
+76:     <%= f.label :"Fecha y Hora  de creación"%><br />
+77:     <%=h f.date_field :created_at %>
+78:     
+79:   </p>
+80:   <p><%= f.submit "Guardar cambios" %></p>
+
+    app/views/users/edit.html.erb:77
+    app/views/users/edit.html.erb:5
+
+Rendered rescues/_trace (153.2ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-11-11 12:02:33) [GET]
+  Parameters: {"action"=>"edit", "id"=>"11", "controller"=>"users"}
+  [4;35;1mUser Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 11) [0m
+Rendering template within layouts/application
+Rendering users/edit
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`persistence_token` = 'a29972bf90218302838db1dc1f47cf3957a15910d643b88f0dfa45f0becc29a0ed7897fcff8c050039a242aa5cf859bebfe8a379f9bbe1d5df01fc71bafe4044') LIMIT 1[0m
+Completed in 51ms (View: 35, DB: 3) | 200 OK [http://127.0.0.1/users/11/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#update (for 127.0.0.1 at 2010-11-11 12:02:43) [PUT]
+  Parameters: {"commit"=>"Guardar cambios", "action"=>"update", "_method"=>"put", "authenticity_token"=>"gqj/+Iwz0GeCt40rObM/F3Ej6dKJEILY485piYT9lGo=", "id"=>"11", "controller"=>"users", "user"=>{"skype"=>"", "fechanacimiento(1i)"=>"", "created_at"=>"2010-11-11 15:49:30", "fechanacimiento(2i)"=>"1", "fechanacimiento(3i)"=>"7", "idioma"=>"", "password_confirmation"=>"[FILTERED]", "role"=>"admin", "username"=>"doss", "cargo"=>"", "ciudad"=>"", "pais"=>"", "sexo"=>"_", "nombreapellido"=>"", "status"=>"activo", "password"=>"[FILTERED]", "email"=>"doss@gmail.com"}}
+  [4;36;1mUser Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 11) [0m
+WARNING: Can't mass-assign these protected attributes: created_at
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/
+Completed in 28ms (DB: 3) | 302 Found [http://127.0.0.1/users/11]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OasController#index (for 127.0.0.1 at 2010-11-11 12:02:43) [GET]
+  Parameters: {"action"=>"index", "controller"=>"oas"}
+  [4;36;1mOa Load (0.3ms)[0m   [0;1mSELECT * FROM `oas` [0m
+Rendering template within layouts/application
+Rendering oas/index
+  [4;35;1mOa Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `oas`[0m
+  [4;36;1mUser Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`persistence_token` = 'a29972bf90218302838db1dc1f47cf3957a15910d643b88f0dfa45f0becc29a0ed7897fcff8c050039a242aa5cf859bebfe8a379f9bbe1d5df01fc71bafe4044') LIMIT 1[0m
+Completed in 63ms (View: 51, DB: 4) | 200 OK [http://127.0.0.1/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-11-11 12:02:46) [GET]
+  Parameters: {"action"=>"edit", "id"=>"11", "controller"=>"users"}
+  [4;36;1mUser Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 11) [0m
+Rendering template within layouts/application
+Rendering users/edit
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = 'a29972bf90218302838db1dc1f47cf3957a15910d643b88f0dfa45f0becc29a0ed7897fcff8c050039a242aa5cf859bebfe8a379f9bbe1d5df01fc71bafe4044') LIMIT 1[0m
+Completed in 51ms (View: 33, DB: 2) | 200 OK [http://127.0.0.1/users/11/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OasController#index (for 127.0.0.1 at 2010-11-11 12:06:03) [GET]
+  Parameters: {"action"=>"index", "controller"=>"oas"}
+  [4;35;1mOa Load (0.3ms)[0m   [0mSELECT * FROM `oas` [0m
+Rendering template within layouts/application
+Rendering oas/index
+  [4;36;1mOa Columns (7.2ms)[0m   [0;1mSHOW FIELDS FROM `oas`[0m
+  [4;35;1mUser Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`persistence_token` = 'a29972bf90218302838db1dc1f47cf3957a15910d643b88f0dfa45f0becc29a0ed7897fcff8c050039a242aa5cf859bebfe8a379f9bbe1d5df01fc71bafe4044') LIMIT 1[0m
+Completed in 72ms (View: 53, DB: 10) | 200 OK [http://127.0.0.1/]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2010-11-11 12:06:05) [GET]
+  Parameters: {"action"=>"edit", "id"=>"11", "controller"=>"users"}
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 11) [0m
+Rendering template within layouts/application
+Rendering users/edit
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`persistence_token` = 'a29972bf90218302838db1dc1f47cf3957a15910d643b88f0dfa45f0becc29a0ed7897fcff8c050039a242aa5cf859bebfe8a379f9bbe1d5df01fc71bafe4044') LIMIT 1[0m
+Completed in 43ms (View: 30, DB: 3) | 200 OK [http://127.0.0.1/users/11/edit]

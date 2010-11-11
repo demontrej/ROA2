@@ -5,53 +5,77 @@ chingao!!
 <% form_for @user do |f| %>
   <%= f.error_messages %>
   <p>
-    <%= f.label :username %><br />
+    <%= f.label :Foto %><br />
+    <%= f.file_field :foto_file_name %>
+  </p>
+  <p>
+    <%= f.label :"Nombre de usuario" %><br />
     <%= f.text_field :username %>
   </p>
   <p>
-    <%= f.label :email %><br />
+    <%= f.label :"e-mail" %><br />
     <%= f.text_field :email %>
   </p>
   <p>
-    <%= f.label :password %><br />
+    <%= f.label :Contraseña %><br />
     <%= f.password_field :password %>
   </p>
   <p>
-    <%= f.label :password_confirmation %><br />
+    <%= f.label :"Confirmación de contraseña" %><br />
     <%= f.password_field :password_confirmation %>
   </p>
   <p>
-    <%= f.label :role %><br />
+    <%= f.label :Rol %><br />
     <%#= f.text_field :role %>
     <%= f.collection_select :role, User::ROLES, :to_s, :humanize %>
   </p>
   <p>
-    <%= f.label :estado %><br />
-    <%= f.text_field :status %>
+    <%= f.label :Estado %><br />
+    <%= f.collection_select :status, User::ESTADO, :to_s, :humanize %>
   </p>
   <p>
-    <%= f.label :username %><br />
-    <%= f.text_field :username %>
+    <%= f.label :"Nombre y Apellido"%><br />
+    <%= f.text_field :nombreapellido%>
   </p>
   <p>
-    <%= f.label :username %><br />
-    <%= f.text_field :username %>
+    <%= f.label :Pais %><br />
+    <%= f.text_field :pais %>
   </p>
   <p>
-    <%= f.label :username %><br />
-    <%= f.text_field :username %>
+    <%= f.label :Ciudad %><br />
+    <%= f.text_field :ciudad %>
   </p>
   <p>
-    <%= f.label :username %><br />
-    <%= f.text_field :username %>
+    <%= f.label :Idioma %><br />
+    <%= f.text_field :idioma %>
   </p>
   <p>
-    <%= f.label :username %><br />
-    <%= f.text_field :username %>
+    <%= f.label :Sexo %><br />
+    <%= f.collection_select :sexo, User::SEXO, :to_s, :humanize %>
+ 
   </p>
   <p>
-    <%= f.label :username %><br />
-    <%= f.text_field :username %>
+    <%= f.label :"Fecha de nacimiento" %><br />
+    <%= date_select('user', 'fechanacimiento', :order => [:day,:month,:year],
+                                               :start_year => Time.now.year-5,
+                                               :end_year => Time.now.year-70,
+                                               :use_month_names => %w(_ enero febrero marzo abril mayo junio julio agosto septiembre octubre noviembre diciembre mayo),
+                                               :prompt => { :day => 'día', :month => 'mes', :year => 'año' }
+                                               ) %>
+                                               </p>
+  <p>
+    <%= f.label :Cargo %><br />
+    <%= f.text_field :cargo %>
   </p>
-  <p><%= f.submit %></p>
+  <p>
+    <%= f.label :"Dirección de Skype" %><br />
+    <%= f.text_field :skype %>
+  </p>
+  
+  <p>
+    <%= f.label :"Fecha y Hora  de creación"%><br />
+    <%=h f.text_field :created_at %>
+    
+  </p>
+  <p><%= f.submit "Guardar cambios" %></p>
 <% end %>
