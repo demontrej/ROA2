@@ -1,0 +1,71 @@
+<% title "Oa" %>
+
+<p>
+  <strong>Titulo:</strong>
+  <%=h @oa.titulo %>
+</p>
+<p>
+  <strong>file:</strong>
+  <%= image_tag @oa.media.url %>
+</p>
+<p>
+  <strong>Idioma:</strong>
+  <%=h @oa.idioma %>
+</p>
+<p>
+  <strong>Descripcion:</strong>
+  <%=h @oa.descripcion %>
+</p>
+<p>
+  <strong>Palabras Clave:</strong>
+  <%=h @oa.palabras_clave %>
+</p>
+<p>
+  <strong>Ambito:</strong>
+  <%=h @oa.ambito %>
+</p>
+
+<p>
+  <strong>Tipo de interacctividad:</strong>
+  <%=h @oa.Tipodeinteracctividad %>
+</p>
+<p>
+  <strong>Tipo de recurso:</strong>
+  <%=h @oa.Tipoderecurso %>
+</p>
+<p>
+  <strong>Nivel de interactividad:</strong>
+  <%=h @oa.Nivelinteractividad %>
+</p>
+<p>
+  <strong>Densidad semantica:</strong>
+  <%=h @oa.Densidadsemantica %>
+</p>
+<p>
+  <strong>Destinatario:</strong>
+  <%=h @oa.Destinatario %>
+</p>
+<p>
+  <strong>Contexto:</strong>
+  <%=h @user.ambito %>
+</p>
+<p>
+  <strong>Rango tipico de edad:</strong>
+  <%=h @user.ambito %>
+</p>
+<p>
+  <strong>Dificultad:</strong>
+  <%=h @user.ambito %>
+</p>
+<p>
+  <strong>tiempo de aprendizaje:</strong>
+  <%=h @user.tiempodeaprendizaje %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_oa_path(@oa) %> |
+  <%= link_to "Destroy", @oa, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", oas_path %>
+</p>
+
+arreglando el show de user

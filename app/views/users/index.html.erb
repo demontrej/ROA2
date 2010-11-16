@@ -2,6 +2,7 @@
 
 <table>
   <tr>
+    <th>foto</th>
     <th>nombre de usuario</th>
     <th>e-mail</th>
     <th>rol</th>
@@ -9,6 +10,7 @@
   </tr>
   <% for user in @user %>
     <tr>
+      <td><%=image_tag user.foto.url(:thumb) %></td>
       <td><%=h user.username %></td>
       <td><%=h user.email %></td>
       <td><%=h user.role %></td>

@@ -2,80 +2,79 @@
 chingao!!
 <%#= render :partial => 'form' %>
 
-<% form_for @user do |f| %>
+<% form_for @user, :html => { :multipart => true } do |f| %>
   <%= f.error_messages %>
-  <p>
-    <%= f.label :Foto %><br />
-    <%= f.file_field :foto_file_name %>
-  </p>
-  <p>
-    <%= f.label :"Nombre de usuario" %><br />
-    <%= f.text_field :username %>
-  </p>
-  <p>
-    <%= f.label :"e-mail" %><br />
-    <%= f.text_field :email %>
-  </p>
-  <p>
-    <%= f.label :Contraseña %><br />
-    <%= f.password_field :password %>
-  </p>
-  <p>
-    <%= f.label :"Confirmación de contraseña" %><br />
-    <%= f.password_field :password_confirmation %>
-  </p>
-  <p>
-    <%= f.label :Rol %><br />
-    <%#= f.text_field :role %>
-    <%= f.collection_select :role, User::ROLES, :to_s, :humanize %>
-  </p>
-  <p>
-    <%= f.label :Estado %><br />
-    <%= f.collection_select :status, User::ESTADO, :to_s, :humanize %>
-  </p>
-  <p>
-    <%= f.label :"Nombre y Apellido"%><br />
-    <%= f.text_field :nombreapellido%>
-  </p>
-  <p>
-    <%= f.label :Pais %><br />
-    <%= f.text_field :pais %>
-  </p>
-  <p>
-    <%= f.label :Ciudad %><br />
-    <%= f.text_field :ciudad %>
-  </p>
-  <p>
-    <%= f.label :Idioma %><br />
-    <%= f.text_field :idioma %>
-  </p>
-  <p>
-    <%= f.label :Sexo %><br />
-    <%= f.collection_select :sexo, User::SEXO, :to_s, :humanize %>
- 
-  </p>
-  <p>
-    <%= f.label :"Fecha de nacimiento" %><br />
-    <%= date_select('user', 'fechanacimiento', :order => [:day,:month,:year],
+ <%= image_tag @user.foto.url(:small) %>
+<table>
+  <tr>
+    <td><%= f.label :Foto %></td>
+    <td><%= f.file_field :foto %></td>
+  </tr>
+  <tr>
+    <td><%= f.label :"Nombre de usuario" %></td>
+    <td><%= f.text_field :username %></td>
+  </tr>
+  <tr>
+    <td><%= f.label :"e-mail" %></td>
+    <td><%= f.text_field :email %></td>
+  </tr>
+  <tr>
+    <td><%= f.label :Contraseña %></td>
+    <td><%= f.password_field :password %></td>
+  </tr>
+  <tr>
+    <td><%= f.label :"Confirmación de contraseña" %></td>
+    <td><%= f.password_field :password_confirmation %></td>
+  </tr>
+  <tr>
+    <td><%= f.label :Rol %></td>
+    <td><%= f.collection_select :role, User::ROLES, :to_s, :humanize %></td>
+  </tr>
+  <tr>
+    <td><%= f.label :Estado %></td>
+    <td><%= f.collection_select :status, User::ESTADO, :to_s, :humanize %></td>
+  </tr>
+  <tr>
+    <td><%= f.label :"Nombre y Apellido"%></td>
+    <td><%= f.text_field :nombreapellido%></td>
+  </tr>
+  <tr>
+    <td><%= f.label :Pais %></td>
+    <td><%= f.text_field :pais %></td>
+  </tr>
+  <tr>
+    <td><%= f.label :Ciudad %></td>
+    <td><%= f.text_field :ciudad %></td>
+  </tr>
+  <tr>
+    <td><%= f.label :Idioma %></td>
+    <td><%= f.text_field :idioma %></td>
+  </tr>
+  <tr>
+    <td><%= f.label :Sexo %></td>
+    <td><%= f.collection_select :sexo, User::SEXO, :to_s, :humanize %></td>
+  </tr>
+  <tr>
+    <td><%= f.label :"Fecha de nacimiento" %></td>
+    <td><%= date_select('user', 'fechanacimiento', :order => [:day,:month,:year],
                                                :start_year => Time.now.year-5,
                                                :end_year => Time.now.year-70,
                                                :use_month_names => %w(_ enero febrero marzo abril mayo junio julio agosto septiembre octubre noviembre diciembre mayo),
                                                :prompt => { :day => 'día', :month => 'mes', :year => 'año' }
-                                               ) %>
-                                               </p>
-  <p>
-    <%= f.label :Cargo %><br />
-    <%= f.text_field :cargo %>
-  </p>
-  <p>
-    <%= f.label :"Dirección de Skype" %><br />
-    <%= f.text_field :skype %>
-  </p>
-  
-  <p>
-    <%= f.label :"Fecha y Hora  de creación"%><br />
-    <%=h f.text_field :created_at %>
-    
-  </p>
+                                               ) %></td>
+  </tr>
+  <tr>
+    <td><%= f.label :Cargo %></td>
+    <td><%= f.text_field :cargo %></td>
+  </tr>
+  <tr>
+    <td><%= f.label :"Dirección de Skype" %></td>
+    <td><%= f.text_field :skype %></td>
+  </tr>
+  <tr>
+    <td><%= f.label :"Fecha y Hora  de creación"%></td>
+    <td><%=h @user.created_at %></td>
+  </tr>
+</table>
   <p><%= f.submit "Guardar cambios" %></p>
 <% end %>

@@ -5,7 +5,7 @@ class Oa < ActiveRecord::Base
   has_attached_file :media,
     :styles => {
       :thumb=> "70x70#",
-      :small=> "150x150>"
+      :small=> "100x100>"
     }
   has_many :tecnicas
 end
