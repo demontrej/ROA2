@@ -1,0 +1,29 @@
+<% form_for @libro, :html => { :multipart => true } do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :Título %><br />
+    <%= f.text_field :titulo %>
+  </p>
+  <p>
+    <%= f.label :Autor %><br />
+    <%= f.text_field :autor %>
+  </p>
+  <p>
+    <%= f.label :Editorial %><br />
+    <%= f.text_field :editorial %>
+  </p>
+  <p>
+    <%= f.label :Edición %><br />
+    <%= f.text_field :edicion %>
+  </p>
+  <p>
+    <%= f.label :Año %><br />
+    <%= f.text_field :year %>
+  </p>
+  <p>
+      <%= f.label :"Imagen como tapa de Libro" %><br />
+      <%= f.file_field :front %>
+  </p><br />
+
+  <p><%= f.submit "Guardar cambios" %></p>
+<% end %>

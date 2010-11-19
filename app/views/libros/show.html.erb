@@ -1,14 +1,42 @@
+<% title "Libro" %>
+
 <p>
-  <b>Titulo:</b>
+  <strong>Titulo:</strong>
   <%=h @libro.titulo %>
 </p>
-
 <p>
-  <b>Contenido:</b>
-  <%=h @libro.contenido %>
+  <strong>Autor:</strong>
+  <%=h @libro.autor %>
 </p>
-
-<% if can? :update, @Libro %>
-<%= link_to 'Edit', edit_libro_path(@libro) %> |
-<% end %>
-<%= link_to 'Back', libros_path %>
+<p>
+  <strong>Editorial:</strong>
+  <%=h @libro.editorial %>
+</p>
+<p>
+  <strong>Edicion:</strong>
+  <%=h @libro.edicion %>
+</p>
+<p>
+  <strong>Year:</strong>
+  <%=h @libro.year %>
+</p>
+<table>
+  <tr>
+    <th>Libro</th>
+    <th>Nropagina</th>
+  </tr>
+  <% for pagina in @libro.paginas %>
+    <tr>
+      <td><%=h pagina.libro_id %></td>
+      <td><%=h pagina.nropagina %></td>
+      <td><%= link_to "Show", pagina %></td>
+      <td><%= link_to "Edit", edit_pagina_path(pagina) %></td>
+      <td><%= link_to "Destroy", pagina, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+<p>
+  <%= link_to "Edit", edit_libro_path(@libro) %> |
+  <%= link_to "Destroy", @libro, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", libros_path %>
+</p>

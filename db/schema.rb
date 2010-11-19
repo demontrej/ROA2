@@ -9,13 +9,20 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101109171843) do
+ActiveRecord::Schema.define(:version => 20101119154848) do
 
   create_table "libros", :force => true do |t|
     t.string   "titulo"
-    t.text     "contenido"
+    t.string   "autor"
+    t.string   "editorial"
+    t.string   "edicion"
+    t.integer  "year"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "front_file_name"
+    t.string   "front_content_type"
+    t.integer  "front_file_size"
+    t.datetime "front_updated_at"
   end
 
   create_table "oas", :force => true do |t|
@@ -39,6 +46,18 @@ ActiveRecord::Schema.define(:version => 20101109171843) do
     t.string   "Rangotipicoedad"
     t.string   "Dificultad"
     t.string   "tiempodeaprendizaje"
+    t.integer  "id_oa"
+  end
+
+  create_table "paginas", :force => true do |t|
+    t.integer  "libro_id"
+    t.string   "nropagina"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "media_file_name"
+    t.string   "media_content_type"
+    t.integer  "media_file_size"
+    t.datetime "media_updated_at"
   end
 
   create_table "tecnicas", :force => true do |t|

@@ -1,0 +1,12 @@
+<% form_for @pagina do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :libro_id %><br />
+    <%= f.text_field :libro_id %>
+  </p>
+  <p>
+    <%= f.label :nropagina %><br />
+    <%= f.text_field :nropagina %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

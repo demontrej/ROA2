@@ -1,9 +1,13 @@
-# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
-
 one:
   titulo: MyString
-  contenido: MyText
+  autor: MyString
+  editorial: MyString
+  edicion: MyString
+  year: 1
 
 two:
   titulo: MyString
-  contenido: MyText
+  autor: MyString
+  editorial: MyString
+  edicion: MyString
+  year: 1

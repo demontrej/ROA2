@@ -1,22 +1,27 @@
-<h1>Listing libros</h1>
+<% title "Libros" %>
 
 <table>
   <tr>
-    <th>Titulo</th>
-    <th>Contenido</th>
+    <th>Imagen</th>
+    <th>Título</th>
+    <th>Autor</th>
+    <th>Editorial</th>
+    <th>Edicion</th>
+    <th>Año</th>
   </tr>
-
-<% @libros.each do |libro| %>
-  <tr>
-    <td><%=h libro.titulo %></td>
-    <td><%=h libro.contenido %></td>
-    <td><%= link_to 'Show', libro %></td>
-    <td><%= link_to 'Edit', edit_libro_path(libro) %></td>
-    <td><%= link_to 'Destroy', libro, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
+  <% for libro in @libros %>
+    <tr>
+      <td><%= image_tag libro.front.url(:thumb) %></td>
+      <td><%=h libro.titulo %></td>
+      <td><%=h libro.autor %></td>
+      <td><%=h libro.editorial %></td>
+      <td><%=h libro.edicion %></td>
+      <td><%=h libro.year %></td>
+      <td><%= link_to "Show", libro %></td>
+      <td><%= link_to "Edit", edit_libro_path(libro) %></td>
+      <td><%= link_to "Destroy", libro, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
 </table>
 
-<br />
-
-<%= link_to 'New libro', new_libro_path %>
+<p><%= link_to "New Libro", new_libro_path %></p>

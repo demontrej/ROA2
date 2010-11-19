@@ -1,71 +1,52 @@
-<% title "Oa" %>
+<% title "Usuario" %>
 
 <p>
-  <strong>Titulo:</strong>
-  <%=h @oa.titulo %>
+  d<%=image_tag @user.foto.url(:small) %>
 </p>
 <p>
-  <strong>file:</strong>
-  <%= image_tag @oa.media.url %>
+  <strong>Nombre de Usuario:</strong>
+  <%=h @user.username %>
+</p>
+<p>
+  <strong>Correo Electronico:</strong>
+  <%=h @user.email %>
+</p>
+<p>
+  <strong>Nombre y Apellido:</strong>
+  <%=h @user.nombreapellido %>
+</p>
+<p>
+  <strong>País:</strong>
+  <%=h @user.pais %>
+</p>
+<p>
+  <strong>Ciudad:</strong>
+  <%=h @user.ciudad %>
 </p>
 <p>
   <strong>Idioma:</strong>
-  <%=h @oa.idioma %>
-</p>
-<p>
-  <strong>Descripcion:</strong>
-  <%=h @oa.descripcion %>
-</p>
-<p>
-  <strong>Palabras Clave:</strong>
-  <%=h @oa.palabras_clave %>
-</p>
-<p>
-  <strong>Ambito:</strong>
-  <%=h @oa.ambito %>
+  <%=h @user.idioma %>
 </p>
 
 <p>
-  <strong>Tipo de interacctividad:</strong>
-  <%=h @oa.Tipodeinteracctividad %>
+  <strong>Sexo:</strong>
+  <%=h @user.sexo %>
 </p>
 <p>
-  <strong>Tipo de recurso:</strong>
-  <%=h @oa.Tipoderecurso %>
+  <strong>Fecha de Nacimiento:</strong>
+  <%=h @user.fechanacimiento %>
 </p>
 <p>
-  <strong>Nivel de interactividad:</strong>
-  <%=h @oa.Nivelinteractividad %>
+  <strong>Cargo:</strong>
+  <%=h @user.cargo %>
 </p>
 <p>
-  <strong>Densidad semantica:</strong>
-  <%=h @oa.Densidadsemantica %>
+  <strong>Skype:</strong>
+  <%=h @user.skype %>
 </p>
 <p>
-  <strong>Destinatario:</strong>
-  <%=h @oa.Destinatario %>
+  <%= link_to "Edit", edit_user_path(@user) %> |
+  <%= link_to "Destroy", @user, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", users_path %>
 </p>
-<p>
-  <strong>Contexto:</strong>
-  <%=h @user.ambito %>
-</p>
-<p>
-  <strong>Rango tipico de edad:</strong>
-  <%=h @user.ambito %>
-</p>
-<p>
-  <strong>Dificultad:</strong>
-  <%=h @user.ambito %>
-</p>
-<p>
-  <strong>tiempo de aprendizaje:</strong>
-  <%=h @user.tiempodeaprendizaje %>
-</p>
-
-<p>
-  <%= link_to "Edit", edit_oa_path(@oa) %> |
-  <%= link_to "Destroy", @oa, :confirm => 'Are you sure?', :method => :delete %> |
-  <%= link_to "View All", oas_path %>
-</p>
-
 arreglando el show de user

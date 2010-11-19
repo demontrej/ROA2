@@ -10,7 +10,7 @@ class User < ActiveRecord::Base
   end
   #subir un foto de usuario
   has_attached_file :foto, :styles => {
-                      :thumb => ["40x40#", :png],
+                      :thumb => ["50x50#", :png],
                       :small => "400x400>"}
 
 end

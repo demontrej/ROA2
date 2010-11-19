@@ -1,45 +1,54 @@
 require 'test_helper'
 
 class LibrosControllerTest < ActionController::TestCase
-  test "should get index" do
+  def test_index
     get :index
-    assert_response :success
-    assert_not_nil assigns(:libros)
+    assert_template 'index'
   end
-
-  test "should get new" do
+  
+  def test_show
+    get :show, :id => Libro.first
+    assert_template 'show'
+  end
+  
+  def test_new
     get :new
-    assert_response :success
+    assert_template 'new'
+  end
+  
+  def test_create_invalid
+    Libro.any_instance.stubs(:valid?).returns(false)
+    post :create
+    assert_template 'new'
   end
 
-  test "should create libro" do
-    assert_difference('Libro.count') do
-      post :create, :libro => { }
-    end
-
-    assert_redirected_to libro_path(assigns(:libro))
+  def test_create_valid
+    Libro.any_instance.stubs(:valid?).returns(true)
+    post :create
+    assert_redirected_to libro_url(assigns(:libro))
+  end
+  
+  def test_edit
+    get :edit, :id => Libro.first
+    assert_template 'edit'
+  end
+  
+  def test_update_invalid
+    Libro.any_instance.stubs(:valid?).returns(false)
+    put :update, :id => Libro.first
+    assert_template 'edit'
   end
 
-  test "should show libro" do
-    get :show, :id => libros(:one).to_param
-    assert_response :success
+  def test_update_valid
+    Libro.any_instance.stubs(:valid?).returns(true)
+    put :update, :id => Libro.first
+    assert_redirected_to libro_url(assigns(:libro))
   end
-
-  test "should get edit" do
-    get :edit, :id => libros(:one).to_param
-    assert_response :success
-  end
-
-  test "should update libro" do
-    put :update, :id => libros(:one).to_param, :libro => { }
-    assert_redirected_to libro_path(assigns(:libro))
-  end
-
-  test "should destroy libro" do
-    assert_difference('Libro.count', -1) do
-      delete :destroy, :id => libros(:one).to_param
-    end
-
-    assert_redirected_to libros_path
+  
+  def test_destroy
+    libro = Libro.first
+    delete :destroy, :id => libro
+    assert_redirected_to libros_url
+    assert !Libro.exists?(libro.id)
   end
 end
