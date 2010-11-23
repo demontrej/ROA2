@@ -1,42 +1,35 @@
-<% title "Libro" %>
+<% title @libro.titulo %>
 
-<p>
-  <strong>Titulo:</strong>
-  <%=h @libro.titulo %>
-</p>
-<p>
-  <strong>Autor:</strong>
-  <%=h @libro.autor %>
-</p>
-<p>
-  <strong>Editorial:</strong>
-  <%=h @libro.editorial %>
-</p>
-<p>
-  <strong>Edicion:</strong>
-  <%=h @libro.edicion %>
-</p>
-<p>
-  <strong>Year:</strong>
-  <%=h @libro.year %>
-</p>
+
 <table>
   <tr>
-    <th>Libro</th>
-    <th>Nropagina</th>
+    <th>recurso</th>
+    <th>pagina</th>
   </tr>
-  <% for pagina in @libro.paginas %>
+  <% for pagina in @libro.paginas.all(:order=> "media_file_name ASC") %>
     <tr>
-      <td><%=h pagina.libro_id %></td>
-      <td><%=h pagina.nropagina %></td>
+      <td><%= image_tag pagina.media.url(:thumb) %></td>
+      <td><%=h pagina.media_file_name %></td>
       <td><%= link_to "Show", pagina %></td>
       <td><%= link_to "Edit", edit_pagina_path(pagina) %></td>
       <td><%= link_to "Destroy", pagina, :confirm => 'Are you sure?', :method => :delete %></td>
     </tr>
   <% end %>
 </table>
-<p>
-  <%= link_to "Edit", edit_libro_path(@libro) %> |
-  <%= link_to "Destroy", @libro, :confirm => 'Are you sure?', :method => :delete %> |
-  <%= link_to "View All", libros_path %>
-</p>
+<%# aca podemos cargar las paginas%>
+<% form_for @libro.paginas.new, :html => { :multipart => true } do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.hidden_field :libro_id %>
+  </p>
+  <p>
+    <%= f.label :"Nueva pagina" %><br />
+    <%= f.file_field :media %>
+  </p>
+  <p>
+    <%= f.hidden_field :nropagina %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>
+<%= link_to "View All", libros_path %>
+

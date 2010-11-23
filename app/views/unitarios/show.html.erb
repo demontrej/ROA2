@@ -1,0 +1,12 @@
+<% title "Unitario" %>
+
+<p>
+  <strong>Titulo:</strong>
+  <%=h @unitario.titulo %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_unitario_path(@unitario) %> |
+  <%= link_to "Destroy", @unitario, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", unitarios_path %>
+</p>

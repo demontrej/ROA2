@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101119154848) do
+ActiveRecord::Schema.define(:version => 20101123140017) do
 
   create_table "libros", :force => true do |t|
     t.string   "titulo"
@@ -64,6 +64,16 @@ ActiveRecord::Schema.define(:version => 20101119154848) do
     t.integer  "oa_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "unitarios", :force => true do |t|
+    t.string   "titulo"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "mediau_file_name"
+    t.string   "mediau_content_type"
+    t.integer  "mediau_file_size"
+    t.datetime "mediau_updated_at"
   end
 
   create_table "users", :force => true do |t|

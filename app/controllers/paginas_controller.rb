@@ -1,6 +1,6 @@
 class PaginasController < ApplicationController
   def index
-    @paginas = Pagina.all
+    @pagina = Pagina.all(:order=> "media_file_name ASC")
   end
   
   def show
@@ -12,10 +12,11 @@ class PaginasController < ApplicationController
   end
   
   def create
+    #@libro=Libro.find(params[:libro_id])
     @pagina = Pagina.new(params[:pagina])
     if @pagina.save
       flash[:notice] = "Successfully created pagina."
-      redirect_to @pagina
+      redirect_to :controller => "libros", :action => "show", :id => @pagina.libro_id
     else
       render :action => 'new'
     end
@@ -39,6 +40,6 @@ class PaginasController < ApplicationController
     @pagina = Pagina.find(params[:id])
     @pagina.destroy
     flash[:notice] = "Successfully destroyed pagina."
-    redirect_to paginas_url
+    redirect_to :controller => "libros", :action => "show", :id => @pagina.libro_id
   end
 end

@@ -1,0 +1,19 @@
+<% title "Recursos unitarios" %>
+
+<table>
+  <tr>
+    <th> </th>
+    <th>Titulo</th>
+  </tr>
+  <% for unitario in @unitarios %>
+    <tr>
+      <td><%= image_tag unitario.mediau.url(:thumb) %></td>
+      <td><%=h unitario.titulo %></td>
+      <td><%= link_to "Show", unitario %></td>
+      <td><%= link_to "Edit", edit_unitario_path(unitario) %></td>
+      <td><%= link_to "Destroy", unitario, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "Nuevo recurso unitario", new_unitario_path %></p>

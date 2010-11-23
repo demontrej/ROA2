@@ -1,9 +1,9 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :unitarios
+
   map.resources :paginas
 
   map.resources :libros
-
-  map.resources :tecnicas
 
   map.resources :oas
 

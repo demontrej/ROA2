@@ -1,0 +1,12 @@
+<% form_for @unitario, :html => { :multipart => true } do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :titulo %><br />
+    <%= f.text_field :titulo %>
+  </p>
+  <p>
+    <%= f.label :recurso %><br />
+    <%= f.file_field :mediau %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

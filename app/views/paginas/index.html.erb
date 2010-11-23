@@ -5,10 +5,11 @@
     <th>Libro</th>
     <th>Nropagina</th>
   </tr>
-  <% for pagina in @paginas %>
+  <% for pagina in @pagina %>
     <tr>
+
       <td><%=h pagina.libro_id %></td>
-      <td><%=h pagina.nropagina %></td>
+      <td><%=h pagina.media_file_name %></td>
       <td><%= link_to "Show", pagina %></td>
       <td><%= link_to "Edit", edit_pagina_path(pagina) %></td>
       <td><%= link_to "Destroy", pagina, :confirm => 'Are you sure?', :method => :delete %></td>
